@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="seleniumandroidpageobject">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="D:/eclipse-jee-mars-1-win32-x86_64/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="seleniumandroidpageobject.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/selenium-server-standalone-2.25.0.jar"/>
+        <pathelement location="lib/selenium-java-2.25.0-srcs.jar"/>
+        <pathelement location="lib/selenium-java-2.25.0.jar"/>
+        <pathelement location="lib/mongo-java-driver-2.10.1.jar"/>
+        <pathelement location="lib/dom4j-1.6.1.jar"/>
+        <pathelement location="lib/log4j-1.2.17.jar"/>
+        <pathelement location="lib/slf4j-api-1.7.7.jar"/>
+        <pathelement location="lib/slf4j-log4j12-1.7.7.jar"/>
+        <pathelement location="lib/jcommander-1.48.jar"/>
+        <pathelement location="lib/testng-6.8.8.jar"/>
+        <pathelement location="lib/saxon-8.7.jar"/>
+        <pathelement location="lib/htmlparser.jar"/>
+        <pathelement location="lib/mail.jar"/>
+        <pathelement location="lib/commons-codec-1.4.jar"/>
+        <pathelement location="lib/commons-httpclient-3.0.1.jar"/>
+        <pathelement location="lib/commons-logging.jar"/>
+        <pathelement location="lib/commons-beanutils-1.7.0.jar"/>
+        <pathelement location="lib/commons-collections-3.1.jar"/>
+        <pathelement location="lib/commons-lang-2.5.jar"/>
+        <pathelement location="lib/ezmorph-1.0.3.jar"/>
+        <pathelement location="lib/json-lib-2.1-jdk15.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="seleniumandroidpageobject.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="demoselenium (2)">
+        <java classname="com.demo.seleniumandroid.demoselenium" failonerror="true" fork="yes">
+            <classpath refid="seleniumandroidpageobject.classpath"/>
+        </java>
+    </target>
+    <target name="demoseleniumBaidu (1)">
+        <java classname="com.demo.seleniumandroid.demoseleniumBaidu" failonerror="true" fork="yes">
+            <classpath refid="seleniumandroidpageobject.classpath"/>
+        </java>
+    </target>
+    <target name="emailTest2 (1)">
+        <java classname="com.zhou.mail.emailTest2" failonerror="true" fork="yes">
+            <classpath refid="seleniumandroidpageobject.classpath"/>
+        </java>
+    </target>
+    <target name="PosidonRun (2)">
+        <java classname="com.zhou.run.PosidonRun" failonerror="true" fork="yes">
+            <classpath refid="seleniumandroidpageobject.classpath"/>
+        </java>
+    </target>
+    <target name="Run (2)">
+        <java classname="com.zhou.autotest.Run" failonerror="true" fork="yes">
+            <classpath refid="seleniumandroidpageobject.classpath"/>
+        </java>
+    </target>
+    <target name="Run (3)">
+        <java classname="com.zhou.run.Run" failonerror="true" fork="yes">
+            <classpath refid="seleniumandroidpageobject.classpath"/>
+        </java>
+    </target>
+    <target name="SendMail (1)">
+        <java classname="com.zhou.mail.SendMail" failonerror="true" fork="yes">
+            <classpath refid="seleniumandroidpageobject.classpath"/>
+        </java>
+    </target>
+    <target name="HttpAssert (1)">
+        <java classname="com.zhou.httpclientutil.HttpAssert" failonerror="true" fork="yes">
+            <classpath refid="seleniumandroidpageobject.classpath"/>
+        </java>
+    </target>
+    <target name="PosidonRun2">
+        <java classname="com.zhou.run.PosidonRun2" failonerror="true" fork="yes">
+            <classpath refid="seleniumandroidpageobject.classpath"/>
+        </java>
+    </target>
+</project>

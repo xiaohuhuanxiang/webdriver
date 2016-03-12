@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="98" passed="96">
+  <reporter-output>
+    <line>
+      <![CDATA[VideoLibrary : blocks > 0]]>
+    </line>
+    <line>
+      <![CDATA[VideoLibrary AnimalComics : total > 0]]>
+    </line>
+    <line>
+      <![CDATA[VideoLibrary Film : total > 0]]>
+    </line>
+    <line>
+      <![CDATA[VideoLibrary TVseries : total > 0]]>
+    </line>
+    <line>
+      <![CDATA[VideoLibrary Varietyshow : total > 0]]>
+    </line>
+    <line>
+      <![CDATA[VideoNumber : classlist > 0]]>
+    </line>
+    <line>
+      <![CDATA[VideoNumber : list > 0]]>
+    </line>
+    <line>
+      <![CDATA[Film Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Film Detail :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Car Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[car FunNews :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[EPL Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[EPL Retrieval Manchester :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Sports Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[sports Basketball :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Entertainment Headlines :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Entertainment Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[TVSeries Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[TVSeries Detail :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Military Retrieval Situation :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Science Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[game Competition :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Game Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[News Domestic :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[News Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[testGuessYouLike : blocks > 0]]>
+    </line>
+    <line>
+      <![CDATA[Fighting Retrieval StarStyle :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Fashion Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Funny Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Funny PetDaily :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Fighting Retrieval Boxing :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Fighting Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Squaredance Teaching :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Squaredance Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[VarietyShow Detail :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[VarietyShow Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Microfilm Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Microfilm Detail :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Life Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Life Retrieval Food :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Military Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Military Retrieval Situation :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[tourism GlobalGossip :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Tourism Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Hotspot ThisMonth :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[Hotspot Retrieval All :total > 0]]>
+    </line>
+  </reporter-output>
+  <suite name="mplay_vplay" duration-ms="3885" started-at="2016-03-11T18:42:33Z" finished-at="2016-03-11T18:42:37Z">
+    <groups>
+    </groups>
+    <test name="mplay_vplay" duration-ms="3885" started-at="2016-03-11T18:42:33Z" finished-at="2016-03-11T18:42:37Z">
+      <class name="com.zhou.posidonautotest.vplay.ScienceRetrieval">
+        <test-method status="FAIL" signature="testScienceFilters()" name="testScienceFilters" duration-ms="17" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[testScienceFilters expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: testScienceFilters expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at com.zhou.posidonautotest.vplay.ScienceRetrieval.testScienceFilters(ScienceRetrieval.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at com.zhou.run.PosidonRun2.main(PosidonRun2.java:65)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="testScienceSituation()" name="testScienceSituation" duration-ms="174" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testScienceAll()" name="testScienceAll" duration-ms="24" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.EntertainmentRetrieval">
+        <test-method status="PASS" signature="testEntertainmentHeadlines()" name="testEntertainmentHeadlines" duration-ms="133" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testEntertainmentFilters()" name="testEntertainmentFilters" duration-ms="20" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testEntertainmentAll()" name="testEntertainmentAll" duration-ms="18" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.VideoNumber">
+        <test-method status="PASS" signature="testVideoNumberclasslist()" name="testVideoNumberclasslist" duration-ms="23" started-at="2016-03-11T18:42:34Z" finished-at="2016-03-11T18:42:34Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoNumberlist()" name="testVideoNumberlist" duration-ms="26" started-at="2016-03-11T18:42:34Z" depends-on-methods="com.zhou.posidonautotest.vplay.VideoNumber.testVideoNumberclasslist" finished-at="2016-03-11T18:42:34Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.mplay.MicrofilmRetrieval">
+        <test-method status="PASS" signature="testMicrofilmFilters()" name="testMicrofilmFilters" duration-ms="18" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+        <test-method status="PASS" signature="testMicrofilmAll()" name="testMicrofilmAll" duration-ms="89" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+        <test-method status="PASS" signature="testMicrofilmDetail()" name="testMicrofilmDetail" duration-ms="91" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.FashionRetrieval">
+        <test-method status="PASS" signature="testFashionStarStyle()" name="testFashionStarStyle" duration-ms="19" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testFashionFilters()" name="testFashionFilters" duration-ms="13" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testFashionAll()" name="testFashionAll" duration-ms="19" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.FightingRetrieval">
+        <test-method status="PASS" signature="testfightingBoxing()" name="testfightingBoxing" duration-ms="35" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testFightingAll()" name="testFightingAll" duration-ms="98" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testFightingFilters()" name="testFightingFilters" duration-ms="20" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.HotSpotRetrieval">
+        <test-method status="PASS" signature="testHotspotThisMonth()" name="testHotspotThisMonth" duration-ms="109" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+        <test-method status="FAIL" signature="testHotspotFilters()" name="testHotspotFilters" duration-ms="19" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[testHotspotFilters expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: testHotspotFilters expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at com.zhou.posidonautotest.vplay.HotSpotRetrieval.testHotspotFilters(HotSpotRetrieval.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at com.zhou.run.PosidonRun2.main(PosidonRun2.java:65)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="testHotspotAll()" name="testHotspotAll" duration-ms="30" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.mplay.TVSeriesRetrieval">
+        <test-method status="PASS" signature="testTVSeriesAll()" name="testTVSeriesAll" duration-ms="20" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testTVSeriesDetail()" name="testTVSeriesDetail" duration-ms="66" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testTVSeriesFilters()" name="testTVSeriesFilters" duration-ms="15" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.GameRetrieval">
+        <test-method status="PASS" signature="testgameCompetition()" name="testgameCompetition" duration-ms="31" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testGameFilters()" name="testGameFilters" duration-ms="13" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testGameAll()" name="testGameAll" duration-ms="21" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.SportsRetrieval">
+        <test-method status="PASS" signature="testSportsFilters()" name="testSportsFilters" duration-ms="16" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testsportsAll()" name="testsportsAll" duration-ms="33" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testsportsBasketball()" name="testsportsBasketball" duration-ms="79" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.mplay.VarietyShowRetrieval">
+        <test-method status="PASS" signature="testVarietyShowFilters()" name="testVarietyShowFilters" duration-ms="14" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testVarietyShowDetail()" name="testVarietyShowDetail" duration-ms="73" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testVarietyShowAll()" name="testVarietyShowAll" duration-ms="85" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.mplay.VideoLibrary">
+        <test-method status="PASS" signature="testVideoLibrary()" name="testVideoLibrary" duration-ms="421" started-at="2016-03-11T18:42:33Z" finished-at="2016-03-11T18:42:34Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoLibraryAnimalComics()" name="testVideoLibraryAnimalComics" duration-ms="114" started-at="2016-03-11T18:42:34Z" depends-on-methods="com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibrary" finished-at="2016-03-11T18:42:34Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoLibraryFilm()" name="testVideoLibraryFilm" duration-ms="122" started-at="2016-03-11T18:42:34Z" depends-on-methods="com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibrary" finished-at="2016-03-11T18:42:34Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoLibraryTVseries()" name="testVideoLibraryTVseries" duration-ms="101" started-at="2016-03-11T18:42:34Z" depends-on-methods="com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibrary" finished-at="2016-03-11T18:42:34Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoLibraryVarietyshow()" name="testVideoLibraryVarietyshow" duration-ms="112" started-at="2016-03-11T18:42:34Z" depends-on-methods="com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibrary" finished-at="2016-03-11T18:42:34Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoLibraryAnimalComicsFilters()" name="testVideoLibraryAnimalComicsFilters" duration-ms="19" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoLibraryFilmFilters()" name="testVideoLibraryFilmFilters" duration-ms="16" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoLibraryTVseriesFilters()" name="testVideoLibraryTVseriesFilters" duration-ms="21" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoLibraryVarietyShowFilters()" name="testVideoLibraryVarietyShowFilters" duration-ms="19" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.mplay.FilmRetrieval">
+        <test-method status="PASS" signature="testFilmAll()" name="testFilmAll" duration-ms="33" started-at="2016-03-11T18:42:34Z" finished-at="2016-03-11T18:42:34Z">
+        </test-method>
+        <test-method status="PASS" signature="testFilmDetail()" name="testFilmDetail" duration-ms="78" started-at="2016-03-11T18:42:34Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testFilmFilters()" name="testFilmFilters" duration-ms="18" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.MilitaryRetrieval">
+        <test-method status="PASS" signature="testMilitaryAll()" name="testMilitaryAll" duration-ms="16" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+        <test-method status="PASS" signature="testMilitaryFilters()" name="testMilitaryFilters" duration-ms="14" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+        <test-method status="PASS" signature="testMilitarySituation()" name="testMilitarySituation" duration-ms="127" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.EPLRetrieval">
+        <test-method status="PASS" signature="testEPLAll()" name="testEPLAll" duration-ms="86" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testEPLFilters()" name="testEPLFilters" duration-ms="23" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testEPLManchester()" name="testEPLManchester" duration-ms="141" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.mplay.AnimalComicsRetrieval">
+        <test-method status="PASS" signature="testAnimalComicsAll()" name="testAnimalComicsAll" duration-ms="22" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testAnimalComicsFilters()" name="testAnimalComicsFilters" duration-ms="19" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testAnimalComicsDetail()" name="testAnimalComicsDetail" duration-ms="68" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.FunnyRetrieval">
+        <test-method status="PASS" signature="testFunnyAll()" name="testFunnyAll" duration-ms="21" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testFunnyFilters()" name="testFunnyFilters" duration-ms="16" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testFunnyPetDaily()" name="testFunnyPetDaily" duration-ms="21" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.NewsRetrieval">
+        <test-method status="PASS" signature="testNewsFilters()" name="testNewsFilters" duration-ms="17" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testNewsDomestic()" name="testNewsDomestic" duration-ms="91" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testNewsAll()" name="testNewsAll" duration-ms="25" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.GuessYouLike">
+        <test-method status="PASS" signature="testGuessYouLike()" name="testGuessYouLike" duration-ms="108" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.CarRetrieval">
+        <test-method status="PASS" signature="testCarAll()" name="testCarAll" duration-ms="22" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testCarFilters()" name="testCarFilters" duration-ms="14" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+        <test-method status="PASS" signature="testcarFunNews()" name="testcarFunNews" duration-ms="17" started-at="2016-03-11T18:42:35Z" finished-at="2016-03-11T18:42:35Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.LifeRetrieval">
+        <test-method status="PASS" signature="testLifeAll()" name="testLifeAll" duration-ms="24" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+        <test-method status="PASS" signature="testLifeFilters()" name="testLifeFilters" duration-ms="15" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+        <test-method status="PASS" signature="testLifeSituation()" name="testLifeSituation" duration-ms="21" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.TourismRetrieval">
+        <test-method status="PASS" signature="testtourismGlobalGossip()" name="testtourismGlobalGossip" duration-ms="92" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+        <test-method status="PASS" signature="testTourismFilters()" name="testTourismFilters" duration-ms="22" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+        <test-method status="PASS" signature="testTourismAll()" name="testTourismAll" duration-ms="164" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.SquaredanceRetrieval">
+        <test-method status="PASS" signature="testSquaredanceTeaching()" name="testSquaredanceTeaching" duration-ms="90" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testSquaredanceFilters()" name="testSquaredanceFilters" duration-ms="15" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+        <test-method status="PASS" signature="testSquaredanceAll()" name="testSquaredanceAll" duration-ms="19" started-at="2016-03-11T18:42:36Z" finished-at="2016-03-11T18:42:36Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+  <suite name="navigation" duration-ms="1155" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:39Z">
+    <groups>
+    </groups>
+    <test name="navigation" duration-ms="1155" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:39Z">
+      <class name="com.zhou.posidonautotest.navigation.VplayNavigation">
+        <test-method status="PASS" signature="testCarNavigation()" name="testCarNavigation" duration-ms="55" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testEPLNavigation()" name="testEPLNavigation" duration-ms="30" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testEntertainmentNavigation()" name="testEntertainmentNavigation" duration-ms="37" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testFashionNavigation()" name="testFashionNavigation" duration-ms="60" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testFunnyNavigation()" name="testFunnyNavigation" duration-ms="29" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testGuessYouLikeNavigation()" name="testGuessYouLikeNavigation" duration-ms="19" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testHotspotNavigation()" name="testHotspotNavigation" duration-ms="49" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testLifeNavigation()" name="testLifeNavigation" duration-ms="54" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testNewsNavigation()" name="testNewsNavigation" duration-ms="34" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testScienceNavigation()" name="testScienceNavigation" duration-ms="37" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testSquaredanceNavigation()" name="testSquaredanceNavigation" duration-ms="24" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testTourismNavigation()" name="testTourismNavigation" duration-ms="24" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoNumberNavigation()" name="testVideoNumberNavigation" duration-ms="30" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testfightingNavigation()" name="testfightingNavigation" duration-ms="21" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testgameNavigation()" name="testgameNavigation" duration-ms="49" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testmilitaryNavigation()" name="testmilitaryNavigation" duration-ms="51" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testsportsNavigation()" name="testsportsNavigation" duration-ms="71" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:39Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.navigation.MplayNavigation">
+        <test-method status="PASS" signature="testAnimalComicsNavigation()" name="testAnimalComicsNavigation" duration-ms="38" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testFilmNavigation()" name="testFilmNavigation" duration-ms="33" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testMicrofilmNavigation()" name="testMicrofilmNavigation" duration-ms="69" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testRecommentNavigation()" name="testRecommentNavigation" duration-ms="52" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testTVSeriesNavigation()" name="testTVSeriesNavigation" duration-ms="27" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testVarietyShowNavigation()" name="testVarietyShowNavigation" duration-ms="83" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoLibraryNavigation()" name="testVideoLibraryNavigation" duration-ms="32" started-at="2016-03-11T18:42:38Z" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+      </class>
+      <class name="com.zhou.posidonautotest.navigation.Search">
+        <test-method status="PASS" signature="testMediaSearch()" name="testMediaSearch" duration-ms="70" started-at="2016-03-11T18:42:37Z" finished-at="2016-03-11T18:42:37Z">
+        </test-method>
+        <test-method status="PASS" signature="testVideoSearch()" name="testVideoSearch" duration-ms="71" started-at="2016-03-11T18:42:37Z" depends-on-methods="com.zhou.posidonautotest.navigation.Search.testMediaSearch" finished-at="2016-03-11T18:42:38Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

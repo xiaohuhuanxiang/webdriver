@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [aotutest]">
+  <test name="aotutest(failed)" preserve-order="false">
+    <classes>
+      <class name="com.zhou.posidonautotest.vplay.HotSpotRetrieval">
+        <methods>
+          <include name="testHotspotFilters"/>
+        </methods>
+      </class>
+      <class name="com.zhou.posidonautotest.vplay.ScienceRetrieval">
+        <methods>
+          <include name="testScienceFilters"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
