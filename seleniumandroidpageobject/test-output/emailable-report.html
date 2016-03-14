@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><th colspan="7">navigation</th></tr>
+<tr><td style="text-align:left;padding-right:2em">navigation</td><td class="numi">26</td><td class="numi">26</td><td class="numi">0</td><td class="numi">0</td><td class="numi">1.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><th colspan="7">mplay_vplay</th></tr>
+<tr><td style="text-align:left;padding-right:2em">mplay_vplay</td><td class="numi">70</td><td class="numi">70</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">4.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">96</td><td class="numi">96</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">5.4 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">navigation</th></tr>
+<tr><th colspan="4">navigation &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.navigation.VplayNavigation<td><a href="#m1"><b>testFunnyNavigation</b>  </a></td><td class="numi">1</td><td class="numi">59</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.navigation.Search<td><a href="#m2"><b>testMediaSearch</b>  </a></td><td class="numi">1</td><td class="numi">77</td></tr>
+<tr class="passedodd"><td rowspan="3">com.zhou.posidonautotest.navigation.VplayNavigation<td><a href="#m3"><b>testGuessYouLikeNavigation</b>  </a></td><td class="numi">1</td><td class="numi">24</td></tr><tr class="passedodd"><td><a href="#m4"><b>testHotspotNavigation</b>  </a></td><td class="numi">1</td><td class="numi">44</td></tr><tr class="passedodd"><td><a href="#m5"><b>testEntertainmentNavigation</b>  </a></td><td class="numi">1</td><td class="numi">29</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.navigation.MplayNavigation<td><a href="#m6"><b>testRecommentNavigation</b>  </a></td><td class="numi">1</td><td class="numi">37</td></tr>
+<tr class="passedodd"><td rowspan="2">com.zhou.posidonautotest.navigation.VplayNavigation<td><a href="#m7"><b>testScienceNavigation</b>  </a></td><td class="numi">1</td><td class="numi">44</td></tr><tr class="passedodd"><td><a href="#m8"><b>testFashionNavigation</b>  </a></td><td class="numi">1</td><td class="numi">27</td></tr>
+<tr class="passedeven"><td rowspan="2">com.zhou.posidonautotest.navigation.MplayNavigation<td><a href="#m9"><b>testMicrofilmNavigation</b>  </a></td><td class="numi">1</td><td class="numi">61</td></tr><tr class="passedeven"><td><a href="#m10"><b>testVideoLibraryNavigation</b>  </a></td><td class="numi">1</td><td class="numi">24</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.navigation.VplayNavigation<td><a href="#m11"><b>testSquaredanceNavigation</b>  </a></td><td class="numi">1</td><td class="numi">49</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.navigation.MplayNavigation<td><a href="#m12"><b>testFilmNavigation</b>  </a></td><td class="numi">1</td><td class="numi">31</td></tr>
+<tr class="passedodd"><td rowspan="3">com.zhou.posidonautotest.navigation.VplayNavigation<td><a href="#m13"><b>testfightingNavigation</b>  </a></td><td class="numi">1</td><td class="numi">45</td></tr><tr class="passedodd"><td><a href="#m14"><b>testEPLNavigation</b>  </a></td><td class="numi">1</td><td class="numi">44</td></tr><tr class="passedodd"><td><a href="#m15"><b>testLifeNavigation</b>  </a></td><td class="numi">1</td><td class="numi">51</td></tr>
+<tr class="passedeven"><td rowspan="2">com.zhou.posidonautotest.navigation.MplayNavigation<td><a href="#m16"><b>testAnimalComicsNavigation</b>  </a></td><td class="numi">1</td><td class="numi">32</td></tr><tr class="passedeven"><td><a href="#m17"><b>testVarietyShowNavigation</b>  </a></td><td class="numi">1</td><td class="numi">72</td></tr>
+<tr class="passedodd"><td rowspan="2">com.zhou.posidonautotest.navigation.VplayNavigation<td><a href="#m18"><b>testVideoNumberNavigation</b>  </a></td><td class="numi">1</td><td class="numi">29</td></tr><tr class="passedodd"><td><a href="#m19"><b>testgameNavigation</b>  </a></td><td class="numi">1</td><td class="numi">26</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.navigation.Search<td><a href="#m20"><b>testVideoSearch</b>  </a></td><td class="numi">1</td><td class="numi">68</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.navigation.MplayNavigation<td><a href="#m21"><b>testTVSeriesNavigation</b>  </a></td><td class="numi">1</td><td class="numi">29</td></tr>
+<tr class="passedeven"><td rowspan="5">com.zhou.posidonautotest.navigation.VplayNavigation<td><a href="#m22"><b>testmilitaryNavigation</b>  </a></td><td class="numi">1</td><td class="numi">48</td></tr><tr class="passedeven"><td><a href="#m23"><b>testsportsNavigation</b>  </a></td><td class="numi">1</td><td class="numi">58</td></tr><tr class="passedeven"><td><a href="#m24"><b>testTourismNavigation</b>  </a></td><td class="numi">1</td><td class="numi">54</td></tr><tr class="passedeven"><td><a href="#m25"><b>testCarNavigation</b>  </a></td><td class="numi">1</td><td class="numi">61</td></tr><tr class="passedeven"><td><a href="#m26"><b>testNewsNavigation</b>  </a></td><td class="numi">1</td><td class="numi">26</td></tr>
+<tr><th colspan="4">mplay_vplay</th></tr>
+<tr><th colspan="4">mplay_vplay &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.ScienceRetrieval<td><a href="#m27"><b>testScienceFilters</b>  </a></td><td class="numi">1</td><td class="numi">14</td></tr>
+<tr class="failedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.HotSpotRetrieval<td><a href="#m28"><b>testHotspotFilters</b>  </a></td><td class="numi">1</td><td class="numi">18</td></tr>
+<tr><th colspan="4">mplay_vplay &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.FunnyRetrieval<td><a href="#m29"><b>testFunnyFilters</b>  </a></td><td class="numi">1</td><td class="numi">14</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.TourismRetrieval<td><a href="#m30"><b>testTourismAll</b>  </a></td><td class="numi">1</td><td class="numi">253</td></tr>
+<tr class="passedodd"><td rowspan="2">com.zhou.posidonautotest.vplay.FashionRetrieval<td><a href="#m31"><b>testFashionFilters</b>  </a></td><td class="numi">1</td><td class="numi">16</td></tr><tr class="passedodd"><td><a href="#m32"><b>testFashionAll</b>  </a></td><td class="numi">1</td><td class="numi">16</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.VideoNumber<td><a href="#m33"><b>testVideoNumberlist</b>  </a></td><td class="numi">1</td><td class="numi">31</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.EntertainmentRetrieval<td><a href="#m34"><b>testEntertainmentHeadlines</b>  </a></td><td class="numi">1</td><td class="numi">20</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.MilitaryRetrieval<td><a href="#m35"><b>testMilitarySituation</b>  </a></td><td class="numi">1</td><td class="numi">17</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.GameRetrieval<td><a href="#m36"><b>testGameFilters</b>  </a></td><td class="numi">1</td><td class="numi">18</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.EPLRetrieval<td><a href="#m37"><b>testEPLAll</b>  </a></td><td class="numi">1</td><td class="numi">98</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.FunnyRetrieval<td><a href="#m38"><b>testFunnyAll</b>  </a></td><td class="numi">1</td><td class="numi">20</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.mplay.FilmRetrieval<td><a href="#m39"><b>testFilmFilters</b>  </a></td><td class="numi">1</td><td class="numi">16</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.CarRetrieval<td><a href="#m40"><b>testcarFunNews</b>  </a></td><td class="numi">1</td><td class="numi">158</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.mplay.VideoLibrary<td><a href="#m41"><b>testVideoLibraryVarietyShowFilters</b>  </a></td><td class="numi">1</td><td class="numi">18</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.GameRetrieval<td><a href="#m42"><b>testgameCompetition</b>  </a></td><td class="numi">1</td><td class="numi">119</td></tr>
+<tr class="passedeven"><td rowspan="2">com.zhou.posidonautotest.vplay.EntertainmentRetrieval<td><a href="#m43"><b>testEntertainmentFilters</b>  </a></td><td class="numi">1</td><td class="numi">14</td></tr><tr class="passedeven"><td><a href="#m44"><b>testEntertainmentAll</b>  </a></td><td class="numi">1</td><td class="numi">19</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.FashionRetrieval<td><a href="#m45"><b>testFashionStarStyle</b>  </a></td><td class="numi">1</td><td class="numi">27</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.mplay.VideoLibrary<td><a href="#m46"><b>testVideoLibraryVarietyshow</b>  </a></td><td class="numi">1</td><td class="numi">206</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.EPLRetrieval<td><a href="#m47"><b>testEPLManchester</b>  </a></td><td class="numi">1</td><td class="numi">75</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.mplay.FilmRetrieval<td><a href="#m48"><b>testFilmDetail</b>  </a></td><td class="numi">1</td><td class="numi">73</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.NewsRetrieval<td><a href="#m49"><b>testNewsFilters</b>  </a></td><td class="numi">1</td><td class="numi">17</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.GameRetrieval<td><a href="#m50"><b>testGameAll</b>  </a></td><td class="numi">1</td><td class="numi">28</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.FightingRetrieval<td><a href="#m51"><b>testfightingBoxing</b>  </a></td><td class="numi">1</td><td class="numi">77</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.mplay.VideoLibrary<td><a href="#m52"><b>testVideoLibraryAnimalComics</b>  </a></td><td class="numi">1</td><td class="numi">111</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.mplay.MicrofilmRetrieval<td><a href="#m53"><b>testMicrofilmFilters</b>  </a></td><td class="numi">1</td><td class="numi">17</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.MilitaryRetrieval<td><a href="#m54"><b>testMilitaryFilters</b>  </a></td><td class="numi">1</td><td class="numi">16</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.mplay.TVSeriesRetrieval<td><a href="#m55"><b>testTVSeriesFilters</b>  </a></td><td class="numi">1</td><td class="numi">13</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.mplay.AnimalComicsRetrieval<td><a href="#m56"><b>testAnimalComicsFilters</b>  </a></td><td class="numi">1</td><td class="numi">27</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.NewsRetrieval<td><a href="#m57"><b>testNewsAll</b>  </a></td><td class="numi">1</td><td class="numi">20</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.HotSpotRetrieval<td><a href="#m58"><b>testHotspotAll</b>  </a></td><td class="numi">1</td><td class="numi">18</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.mplay.VarietyShowRetrieval<td><a href="#m59"><b>testVarietyShowDetail</b>  </a></td><td class="numi">1</td><td class="numi">175</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.mplay.TVSeriesRetrieval<td><a href="#m60"><b>testTVSeriesDetail</b>  </a></td><td class="numi">1</td><td class="numi">112</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.GuessYouLike<td><a href="#m61"><b>testGuessYouLike</b>  </a></td><td class="numi">1</td><td class="numi">96</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.mplay.VideoLibrary<td><a href="#m62"><b>testVideoLibraryTVseriesFilters</b>  </a></td><td class="numi">1</td><td class="numi">15</td></tr>
+<tr class="passedodd"><td rowspan="2">com.zhou.posidonautotest.vplay.SquaredanceRetrieval<td><a href="#m63"><b>testSquaredanceFilters</b>  </a></td><td class="numi">1</td><td class="numi">12</td></tr><tr class="passedodd"><td><a href="#m64"><b>testSquaredanceTeaching</b>  </a></td><td class="numi">1</td><td class="numi">17</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.EPLRetrieval<td><a href="#m65"><b>testEPLFilters</b>  </a></td><td class="numi">1</td><td class="numi">16</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.mplay.MicrofilmRetrieval<td><a href="#m66"><b>testMicrofilmDetail</b>  </a></td><td class="numi">1</td><td class="numi">181</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.mplay.TVSeriesRetrieval<td><a href="#m67"><b>testTVSeriesAll</b>  </a></td><td class="numi">1</td><td class="numi">19</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.SquaredanceRetrieval<td><a href="#m68"><b>testSquaredanceAll</b>  </a></td><td class="numi">1</td><td class="numi">71</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.HotSpotRetrieval<td><a href="#m69"><b>testHotspotThisMonth</b>  </a></td><td class="numi">1</td><td class="numi">122</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.CarRetrieval<td><a href="#m70"><b>testCarFilters</b>  </a></td><td class="numi">1</td><td class="numi">21</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.mplay.MicrofilmRetrieval<td><a href="#m71"><b>testMicrofilmAll</b>  </a></td><td class="numi">1</td><td class="numi">24</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.LifeRetrieval<td><a href="#m72"><b>testLifeAll</b>  </a></td><td class="numi">1</td><td class="numi">17</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.CarRetrieval<td><a href="#m73"><b>testCarAll</b>  </a></td><td class="numi">1</td><td class="numi">18</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.ScienceRetrieval<td><a href="#m74"><b>testScienceAll</b>  </a></td><td class="numi">1</td><td class="numi">21</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.TourismRetrieval<td><a href="#m75"><b>testTourismFilters</b>  </a></td><td class="numi">1</td><td class="numi">14</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.FightingRetrieval<td><a href="#m76"><b>testFightingAll</b>  </a></td><td class="numi">1</td><td class="numi">17</td></tr>
+<tr class="passedeven"><td rowspan="3">com.zhou.posidonautotest.mplay.VideoLibrary<td><a href="#m77"><b>testVideoLibraryAnimalComicsFilters</b>  </a></td><td class="numi">1</td><td class="numi">21</td></tr><tr class="passedeven"><td><a href="#m78"><b>testVideoLibraryTVseries</b>  </a></td><td class="numi">1</td><td class="numi">103</td></tr><tr class="passedeven"><td><a href="#m79"><b>testVideoLibraryFilmFilters</b>  </a></td><td class="numi">1</td><td class="numi">16</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.mplay.VarietyShowRetrieval<td><a href="#m80"><b>testVarietyShowAll</b>  </a></td><td class="numi">1</td><td class="numi">186</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.VideoNumber<td><a href="#m81"><b>testVideoNumberclasslist</b>  </a></td><td class="numi">1</td><td class="numi">125</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.SportsRetrieval<td><a href="#m82"><b>testsportsAll</b>  </a></td><td class="numi">1</td><td class="numi">18</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.mplay.FilmRetrieval<td><a href="#m83"><b>testFilmAll</b>  </a></td><td class="numi">1</td><td class="numi">21</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.ScienceRetrieval<td><a href="#m84"><b>testScienceSituation</b>  </a></td><td class="numi">1</td><td class="numi">135</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.FightingRetrieval<td><a href="#m85"><b>testFightingFilters</b>  </a></td><td class="numi">1</td><td class="numi">15</td></tr>
+<tr class="passedodd"><td rowspan="2">com.zhou.posidonautotest.vplay.SportsRetrieval<td><a href="#m86"><b>testsportsBasketball</b>  </a></td><td class="numi">1</td><td class="numi">17</td></tr><tr class="passedodd"><td><a href="#m87"><b>testSportsFilters</b>  </a></td><td class="numi">1</td><td class="numi">15</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.mplay.AnimalComicsRetrieval<td><a href="#m88"><b>testAnimalComicsDetail</b>  </a></td><td class="numi">1</td><td class="numi">74</td></tr>
+<tr class="passedodd"><td rowspan="2">com.zhou.posidonautotest.mplay.VideoLibrary<td><a href="#m89"><b>testVideoLibraryFilm</b>  </a></td><td class="numi">1</td><td class="numi">42</td></tr><tr class="passedodd"><td><a href="#m90"><b>testVideoLibrary</b>  </a></td><td class="numi">1</td><td class="numi">439</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.LifeRetrieval<td><a href="#m91"><b>testLifeFilters</b>  </a></td><td class="numi">1</td><td class="numi">14</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.FunnyRetrieval<td><a href="#m92"><b>testFunnyPetDaily</b>  </a></td><td class="numi">1</td><td class="numi">17</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.NewsRetrieval<td><a href="#m93"><b>testNewsDomestic</b>  </a></td><td class="numi">1</td><td class="numi">18</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.mplay.AnimalComicsRetrieval<td><a href="#m94"><b>testAnimalComicsAll</b>  </a></td><td class="numi">1</td><td class="numi">100</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.TourismRetrieval<td><a href="#m95"><b>testtourismGlobalGossip</b>  </a></td><td class="numi">1</td><td class="numi">86</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.mplay.VarietyShowRetrieval<td><a href="#m96"><b>testVarietyShowFilters</b>  </a></td><td class="numi">1</td><td class="numi">23</td></tr>
+<tr class="passedeven"><td rowspan="1">com.zhou.posidonautotest.vplay.LifeRetrieval<td><a href="#m97"><b>testLifeSituation</b>  </a></td><td class="numi">1</td><td class="numi">92</td></tr>
+<tr class="passedodd"><td rowspan="1">com.zhou.posidonautotest.vplay.MilitaryRetrieval<td><a href="#m98"><b>testMilitaryAll</b>  </a></td><td class="numi">1</td><td class="numi">18</td></tr>
+</table>
+<h1>navigation</h1>
+<a id="m1"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testFunnyNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.zhou.posidonautotest.navigation.Search:testMediaSearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testGuessYouLikeNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testHotspotNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testEntertainmentNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.zhou.posidonautotest.navigation.MplayNavigation:testRecommentNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testScienceNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testFashionNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>com.zhou.posidonautotest.navigation.MplayNavigation:testMicrofilmNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>com.zhou.posidonautotest.navigation.MplayNavigation:testVideoLibraryNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testSquaredanceNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>com.zhou.posidonautotest.navigation.MplayNavigation:testFilmNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testfightingNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testEPLNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testLifeNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>com.zhou.posidonautotest.navigation.MplayNavigation:testAnimalComicsNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>com.zhou.posidonautotest.navigation.MplayNavigation:testVarietyShowNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testVideoNumberNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testgameNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>com.zhou.posidonautotest.navigation.Search:testVideoSearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m21"></a><h2>com.zhou.posidonautotest.navigation.MplayNavigation:testTVSeriesNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m22"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testmilitaryNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m23"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testsportsNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m24"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testTourismNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m25"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testCarNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m26"></a><h2>com.zhou.posidonautotest.navigation.VplayNavigation:testNewsNavigation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>mplay_vplay</h1>
+<a id="m27"></a><h2>com.zhou.posidonautotest.vplay.ScienceRetrieval:testScienceFilters</h2>
+<div style="padding-left:3em">
+<p>testScienceFilters expected:&lt;true&gt; but was:&lt;false&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:480)
+<br/>at org.testng.Assert.assertTrue(Assert.java:37)
+<br/>at com.zhou.posidonautotest.vplay.ScienceRetrieval.testScienceFilters(ScienceRetrieval.java:27)
+<br/>24 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m28"></a><h2>com.zhou.posidonautotest.vplay.HotSpotRetrieval:testHotspotFilters</h2>
+<div style="padding-left:3em">
+<p>testHotspotFilters expected:&lt;true&gt; but was:&lt;false&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:480)
+<br/>at org.testng.Assert.assertTrue(Assert.java:37)
+<br/>at com.zhou.posidonautotest.vplay.HotSpotRetrieval.testHotspotFilters(HotSpotRetrieval.java:27)
+<br/>24 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m29"></a><h2>com.zhou.posidonautotest.vplay.FunnyRetrieval:testFunnyFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m30"></a><h2>com.zhou.posidonautotest.vplay.TourismRetrieval:testTourismAll</h2>
+<div style="padding-left:3em">
+Tourism Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m31"></a><h2>com.zhou.posidonautotest.vplay.FashionRetrieval:testFashionFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m32"></a><h2>com.zhou.posidonautotest.vplay.FashionRetrieval:testFashionAll</h2>
+<div style="padding-left:3em">
+Fashion Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m33"></a><h2>com.zhou.posidonautotest.vplay.VideoNumber:testVideoNumberlist</h2>
+<div style="padding-left:3em">
+VideoNumber : list > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m34"></a><h2>com.zhou.posidonautotest.vplay.EntertainmentRetrieval:testEntertainmentHeadlines</h2>
+<div style="padding-left:3em">
+Entertainment Headlines :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m35"></a><h2>com.zhou.posidonautotest.vplay.MilitaryRetrieval:testMilitarySituation</h2>
+<div style="padding-left:3em">
+Military Retrieval Situation :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m36"></a><h2>com.zhou.posidonautotest.vplay.GameRetrieval:testGameFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m37"></a><h2>com.zhou.posidonautotest.vplay.EPLRetrieval:testEPLAll</h2>
+<div style="padding-left:3em">
+EPL Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m38"></a><h2>com.zhou.posidonautotest.vplay.FunnyRetrieval:testFunnyAll</h2>
+<div style="padding-left:3em">
+Funny Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m39"></a><h2>com.zhou.posidonautotest.mplay.FilmRetrieval:testFilmFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m40"></a><h2>com.zhou.posidonautotest.vplay.CarRetrieval:testcarFunNews</h2>
+<div style="padding-left:3em">
+car FunNews :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m41"></a><h2>com.zhou.posidonautotest.mplay.VideoLibrary:testVideoLibraryVarietyShowFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m42"></a><h2>com.zhou.posidonautotest.vplay.GameRetrieval:testgameCompetition</h2>
+<div style="padding-left:3em">
+game Competition :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m43"></a><h2>com.zhou.posidonautotest.vplay.EntertainmentRetrieval:testEntertainmentFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m44"></a><h2>com.zhou.posidonautotest.vplay.EntertainmentRetrieval:testEntertainmentAll</h2>
+<div style="padding-left:3em">
+Entertainment Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m45"></a><h2>com.zhou.posidonautotest.vplay.FashionRetrieval:testFashionStarStyle</h2>
+<div style="padding-left:3em">
+Fighting Retrieval StarStyle :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m46"></a><h2>com.zhou.posidonautotest.mplay.VideoLibrary:testVideoLibraryVarietyshow</h2>
+<div style="padding-left:3em">
+VideoLibrary Varietyshow : total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m47"></a><h2>com.zhou.posidonautotest.vplay.EPLRetrieval:testEPLManchester</h2>
+<div style="padding-left:3em">
+EPL Retrieval Manchester :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m48"></a><h2>com.zhou.posidonautotest.mplay.FilmRetrieval:testFilmDetail</h2>
+<div style="padding-left:3em">
+Film Detail :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m49"></a><h2>com.zhou.posidonautotest.vplay.NewsRetrieval:testNewsFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m50"></a><h2>com.zhou.posidonautotest.vplay.GameRetrieval:testGameAll</h2>
+<div style="padding-left:3em">
+Game Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m51"></a><h2>com.zhou.posidonautotest.vplay.FightingRetrieval:testfightingBoxing</h2>
+<div style="padding-left:3em">
+Fighting Retrieval Boxing :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m52"></a><h2>com.zhou.posidonautotest.mplay.VideoLibrary:testVideoLibraryAnimalComics</h2>
+<div style="padding-left:3em">
+VideoLibrary AnimalComics : total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m53"></a><h2>com.zhou.posidonautotest.mplay.MicrofilmRetrieval:testMicrofilmFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m54"></a><h2>com.zhou.posidonautotest.vplay.MilitaryRetrieval:testMilitaryFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m55"></a><h2>com.zhou.posidonautotest.mplay.TVSeriesRetrieval:testTVSeriesFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m56"></a><h2>com.zhou.posidonautotest.mplay.AnimalComicsRetrieval:testAnimalComicsFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m57"></a><h2>com.zhou.posidonautotest.vplay.NewsRetrieval:testNewsAll</h2>
+<div style="padding-left:3em">
+News Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m58"></a><h2>com.zhou.posidonautotest.vplay.HotSpotRetrieval:testHotspotAll</h2>
+<div style="padding-left:3em">
+Hotspot Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m59"></a><h2>com.zhou.posidonautotest.mplay.VarietyShowRetrieval:testVarietyShowDetail</h2>
+<div style="padding-left:3em">
+VarietyShow Detail :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m60"></a><h2>com.zhou.posidonautotest.mplay.TVSeriesRetrieval:testTVSeriesDetail</h2>
+<div style="padding-left:3em">
+TVSeries Detail :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m61"></a><h2>com.zhou.posidonautotest.vplay.GuessYouLike:testGuessYouLike</h2>
+<div style="padding-left:3em">
+testGuessYouLike : blocks > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m62"></a><h2>com.zhou.posidonautotest.mplay.VideoLibrary:testVideoLibraryTVseriesFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m63"></a><h2>com.zhou.posidonautotest.vplay.SquaredanceRetrieval:testSquaredanceFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m64"></a><h2>com.zhou.posidonautotest.vplay.SquaredanceRetrieval:testSquaredanceTeaching</h2>
+<div style="padding-left:3em">
+Squaredance Teaching :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m65"></a><h2>com.zhou.posidonautotest.vplay.EPLRetrieval:testEPLFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m66"></a><h2>com.zhou.posidonautotest.mplay.MicrofilmRetrieval:testMicrofilmDetail</h2>
+<div style="padding-left:3em">
+Microfilm Detail :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m67"></a><h2>com.zhou.posidonautotest.mplay.TVSeriesRetrieval:testTVSeriesAll</h2>
+<div style="padding-left:3em">
+TVSeries Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m68"></a><h2>com.zhou.posidonautotest.vplay.SquaredanceRetrieval:testSquaredanceAll</h2>
+<div style="padding-left:3em">
+Squaredance Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m69"></a><h2>com.zhou.posidonautotest.vplay.HotSpotRetrieval:testHotspotThisMonth</h2>
+<div style="padding-left:3em">
+Hotspot ThisMonth :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m70"></a><h2>com.zhou.posidonautotest.vplay.CarRetrieval:testCarFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m71"></a><h2>com.zhou.posidonautotest.mplay.MicrofilmRetrieval:testMicrofilmAll</h2>
+<div style="padding-left:3em">
+Microfilm Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m72"></a><h2>com.zhou.posidonautotest.vplay.LifeRetrieval:testLifeAll</h2>
+<div style="padding-left:3em">
+Life Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m73"></a><h2>com.zhou.posidonautotest.vplay.CarRetrieval:testCarAll</h2>
+<div style="padding-left:3em">
+Car Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m74"></a><h2>com.zhou.posidonautotest.vplay.ScienceRetrieval:testScienceAll</h2>
+<div style="padding-left:3em">
+Science Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m75"></a><h2>com.zhou.posidonautotest.vplay.TourismRetrieval:testTourismFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m76"></a><h2>com.zhou.posidonautotest.vplay.FightingRetrieval:testFightingAll</h2>
+<div style="padding-left:3em">
+Fighting Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m77"></a><h2>com.zhou.posidonautotest.mplay.VideoLibrary:testVideoLibraryAnimalComicsFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m78"></a><h2>com.zhou.posidonautotest.mplay.VideoLibrary:testVideoLibraryTVseries</h2>
+<div style="padding-left:3em">
+VideoLibrary TVseries : total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m79"></a><h2>com.zhou.posidonautotest.mplay.VideoLibrary:testVideoLibraryFilmFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m80"></a><h2>com.zhou.posidonautotest.mplay.VarietyShowRetrieval:testVarietyShowAll</h2>
+<div style="padding-left:3em">
+VarietyShow Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m81"></a><h2>com.zhou.posidonautotest.vplay.VideoNumber:testVideoNumberclasslist</h2>
+<div style="padding-left:3em">
+VideoNumber : classlist > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m82"></a><h2>com.zhou.posidonautotest.vplay.SportsRetrieval:testsportsAll</h2>
+<div style="padding-left:3em">
+Sports Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m83"></a><h2>com.zhou.posidonautotest.mplay.FilmRetrieval:testFilmAll</h2>
+<div style="padding-left:3em">
+Film Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m84"></a><h2>com.zhou.posidonautotest.vplay.ScienceRetrieval:testScienceSituation</h2>
+<div style="padding-left:3em">
+Military Retrieval Situation :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m85"></a><h2>com.zhou.posidonautotest.vplay.FightingRetrieval:testFightingFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m86"></a><h2>com.zhou.posidonautotest.vplay.SportsRetrieval:testsportsBasketball</h2>
+<div style="padding-left:3em">
+sports Basketball :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m87"></a><h2>com.zhou.posidonautotest.vplay.SportsRetrieval:testSportsFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m88"></a><h2>com.zhou.posidonautotest.mplay.AnimalComicsRetrieval:testAnimalComicsDetail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m89"></a><h2>com.zhou.posidonautotest.mplay.VideoLibrary:testVideoLibraryFilm</h2>
+<div style="padding-left:3em">
+VideoLibrary Film : total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m90"></a><h2>com.zhou.posidonautotest.mplay.VideoLibrary:testVideoLibrary</h2>
+<div style="padding-left:3em">
+VideoLibrary : blocks > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m91"></a><h2>com.zhou.posidonautotest.vplay.LifeRetrieval:testLifeFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m92"></a><h2>com.zhou.posidonautotest.vplay.FunnyRetrieval:testFunnyPetDaily</h2>
+<div style="padding-left:3em">
+Funny PetDaily :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m93"></a><h2>com.zhou.posidonautotest.vplay.NewsRetrieval:testNewsDomestic</h2>
+<div style="padding-left:3em">
+News Domestic :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m94"></a><h2>com.zhou.posidonautotest.mplay.AnimalComicsRetrieval:testAnimalComicsAll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m95"></a><h2>com.zhou.posidonautotest.vplay.TourismRetrieval:testtourismGlobalGossip</h2>
+<div style="padding-left:3em">
+tourism GlobalGossip :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m96"></a><h2>com.zhou.posidonautotest.mplay.VarietyShowRetrieval:testVarietyShowFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m97"></a><h2>com.zhou.posidonautotest.vplay.LifeRetrieval:testLifeSituation</h2>
+<div style="padding-left:3em">
+Life Retrieval Food :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m98"></a><h2>com.zhou.posidonautotest.vplay.MilitaryRetrieval:testMilitaryAll</h2>
+<div style="padding-left:3em">
+Military Retrieval All :total > 0<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

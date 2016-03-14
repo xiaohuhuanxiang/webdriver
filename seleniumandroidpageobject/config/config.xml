@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+	<driver>chrome</driver>
+	<waitTime>3</waitTime>
+	<sleep>3000</sleep>
+	<isproxy>n</isproxy>
+	<proxy></proxy>
+	<port></port>
+	<chromdriverLocation>E:\\java\\chromedriver.exe</chromdriverLocation>
+	<IEDriverServer>E:\\IEDriverServer.exe</IEDriverServer>
+	<database></database>
+	<locator></locator>
+	<testData></testData>
+	<linked></linked>
+	<testCase></testCase>
+	<rootPages>com.test.page</rootPages>
+</config>

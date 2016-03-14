@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="FX-JSJ800" name="com.zhou.posidonautotest.mplay.AnimalComicsRetrieval" tests="72" failures="2" timestamp="14 Mar 2016 04:50:03 GMT" time="4.188" errors="0">
+  <testcase name="testVideoLibrary" time="0.439" classname="com.zhou.posidonautotest.mplay.VideoLibrary"/>
+  <testcase name="testVideoLibraryAnimalComics" time="0.111" classname="com.zhou.posidonautotest.mplay.VideoLibrary"/>
+  <testcase name="testVideoLibraryFilm" time="0.042" classname="com.zhou.posidonautotest.mplay.VideoLibrary"/>
+  <testcase name="testVideoLibraryTVseries" time="0.103" classname="com.zhou.posidonautotest.mplay.VideoLibrary"/>
+  <testcase name="testVideoLibraryVarietyshow" time="0.206" classname="com.zhou.posidonautotest.mplay.VideoLibrary"/>
+  <testcase name="testVideoNumberclasslist" time="0.125" classname="com.zhou.posidonautotest.vplay.VideoNumber"/>
+  <testcase name="testVideoNumberlist" time="0.031" classname="com.zhou.posidonautotest.vplay.VideoNumber"/>
+  <testcase name="testAnimalComicsAll" time="0.1" classname="com.zhou.posidonautotest.mplay.AnimalComicsRetrieval"/>
+  <testcase name="testAnimalComicsDetail" time="0.074" classname="com.zhou.posidonautotest.mplay.AnimalComicsRetrieval"/>
+  <testcase name="testAnimalComicsFilters" time="0.027" classname="com.zhou.posidonautotest.mplay.AnimalComicsRetrieval"/>
+  <testcase name="testMicrofilmAll" time="0.024" classname="com.zhou.posidonautotest.mplay.MicrofilmRetrieval"/>
+  <testcase name="testMicrofilmDetail" time="0.181" classname="com.zhou.posidonautotest.mplay.MicrofilmRetrieval"/>
+  <testcase name="testMicrofilmFilters" time="0.017" classname="com.zhou.posidonautotest.mplay.MicrofilmRetrieval"/>
+  <testcase name="testVarietyShowAll" time="0.186" classname="com.zhou.posidonautotest.mplay.VarietyShowRetrieval"/>
+  <testcase name="testVarietyShowDetail" time="0.175" classname="com.zhou.posidonautotest.mplay.VarietyShowRetrieval"/>
+  <testcase name="testVarietyShowFilters" time="0.023" classname="com.zhou.posidonautotest.mplay.VarietyShowRetrieval"/>
+  <testcase name="testVideoLibraryAnimalComicsFilters" time="0.021" classname="com.zhou.posidonautotest.mplay.VideoLibrary"/>
+  <testcase name="testVideoLibraryFilmFilters" time="0.016" classname="com.zhou.posidonautotest.mplay.VideoLibrary"/>
+  <testcase name="testVideoLibraryTVseriesFilters" time="0.015" classname="com.zhou.posidonautotest.mplay.VideoLibrary"/>
+  <testcase name="testVideoLibraryVarietyShowFilters" time="0.018" classname="com.zhou.posidonautotest.mplay.VideoLibrary"/>
+  <testcase name="testEPLAll" time="0.098" classname="com.zhou.posidonautotest.vplay.EPLRetrieval"/>
+  <testcase name="testEPLFilters" time="0.016" classname="com.zhou.posidonautotest.vplay.EPLRetrieval"/>
+  <testcase name="testEPLManchester" time="0.075" classname="com.zhou.posidonautotest.vplay.EPLRetrieval"/>
+  <testcase name="testFunnyAll" time="0.02" classname="com.zhou.posidonautotest.vplay.FunnyRetrieval"/>
+  <testcase name="testFunnyFilters" time="0.014" classname="com.zhou.posidonautotest.vplay.FunnyRetrieval"/>
+  <testcase name="testFunnyPetDaily" time="0.017" classname="com.zhou.posidonautotest.vplay.FunnyRetrieval"/>
+  <testcase name="testGuessYouLike" time="0.096" classname="com.zhou.posidonautotest.vplay.GuessYouLike"/>
+  <testcase name="testNewsAll" time="0.02" classname="com.zhou.posidonautotest.vplay.NewsRetrieval"/>
+  <testcase name="testNewsDomestic" time="0.018" classname="com.zhou.posidonautotest.vplay.NewsRetrieval"/>
+  <testcase name="testNewsFilters" time="0.017" classname="com.zhou.posidonautotest.vplay.NewsRetrieval"/>
+  <testcase name="testLifeFilters" time="0.014" classname="com.zhou.posidonautotest.vplay.LifeRetrieval"/>
+  <testcase name="testLifeSituation" time="0.092" classname="com.zhou.posidonautotest.vplay.LifeRetrieval"/>
+  <testcase name="testLifeAll" time="0.017" classname="com.zhou.posidonautotest.vplay.LifeRetrieval"/>
+  <testcase name="testScienceSituation" time="0.135" classname="com.zhou.posidonautotest.vplay.ScienceRetrieval"/>
+  <testcase name="testScienceFilters" time="0.014" classname="com.zhou.posidonautotest.vplay.ScienceRetrieval">
+    <failure type="java.lang.AssertionError" message="testScienceFilters expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: testScienceFilters expected:<true> but was:<false>
+	at com.zhou.posidonautotest.vplay.ScienceRetrieval.testScienceFilters(ScienceRetrieval.java:27)
+	at com.zhou.run.PosidonRun2.main(PosidonRun2.java:65)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testScienceAll" time="0.021" classname="com.zhou.posidonautotest.vplay.ScienceRetrieval"/>
+  <testcase name="testtourismGlobalGossip" time="0.086" classname="com.zhou.posidonautotest.vplay.TourismRetrieval"/>
+  <testcase name="testTourismFilters" time="0.014" classname="com.zhou.posidonautotest.vplay.TourismRetrieval"/>
+  <testcase name="testTourismAll" time="0.253" classname="com.zhou.posidonautotest.vplay.TourismRetrieval"/>
+  <testcase name="testSportsFilters" time="0.015" classname="com.zhou.posidonautotest.vplay.SportsRetrieval"/>
+  <testcase name="testsportsBasketball" time="0.017" classname="com.zhou.posidonautotest.vplay.SportsRetrieval"/>
+  <testcase name="testsportsAll" time="0.018" classname="com.zhou.posidonautotest.vplay.SportsRetrieval"/>
+  <testcase name="testEntertainmentHeadlines" time="0.02" classname="com.zhou.posidonautotest.vplay.EntertainmentRetrieval"/>
+  <testcase name="testEntertainmentFilters" time="0.014" classname="com.zhou.posidonautotest.vplay.EntertainmentRetrieval"/>
+  <testcase name="testEntertainmentAll" time="0.019" classname="com.zhou.posidonautotest.vplay.EntertainmentRetrieval"/>
+  <testcase name="testTVSeriesAll" time="0.019" classname="com.zhou.posidonautotest.mplay.TVSeriesRetrieval"/>
+  <testcase name="testTVSeriesDetail" time="0.112" classname="com.zhou.posidonautotest.mplay.TVSeriesRetrieval"/>
+  <testcase name="testTVSeriesFilters" time="0.013" classname="com.zhou.posidonautotest.mplay.TVSeriesRetrieval"/>
+  <testcase name="testHotspotThisMonth" time="0.122" classname="com.zhou.posidonautotest.vplay.HotSpotRetrieval"/>
+  <testcase name="testHotspotFilters" time="0.018" classname="com.zhou.posidonautotest.vplay.HotSpotRetrieval">
+    <failure type="java.lang.AssertionError" message="testHotspotFilters expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: testHotspotFilters expected:<true> but was:<false>
+	at com.zhou.posidonautotest.vplay.HotSpotRetrieval.testHotspotFilters(HotSpotRetrieval.java:27)
+	at com.zhou.run.PosidonRun2.main(PosidonRun2.java:65)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testHotspotAll" time="0.018" classname="com.zhou.posidonautotest.vplay.HotSpotRetrieval"/>
+  <testcase name="testMilitaryFilters" time="0.016" classname="com.zhou.posidonautotest.vplay.MilitaryRetrieval"/>
+  <testcase name="testMilitarySituation" time="0.017" classname="com.zhou.posidonautotest.vplay.MilitaryRetrieval"/>
+  <testcase name="testMilitaryAll" time="0.018" classname="com.zhou.posidonautotest.vplay.MilitaryRetrieval"/>
+  <testcase name="testFilmFilters" time="0.016" classname="com.zhou.posidonautotest.mplay.FilmRetrieval"/>
+  <testcase name="testFilmDetail" time="0.073" classname="com.zhou.posidonautotest.mplay.FilmRetrieval"/>
+  <testcase name="testFilmAll" time="0.021" classname="com.zhou.posidonautotest.mplay.FilmRetrieval"/>
+  <testcase name="testgameCompetition" time="0.119" classname="com.zhou.posidonautotest.vplay.GameRetrieval"/>
+  <testcase name="testGameFilters" time="0.018" classname="com.zhou.posidonautotest.vplay.GameRetrieval"/>
+  <testcase name="testGameAll" time="0.028" classname="com.zhou.posidonautotest.vplay.GameRetrieval"/>
+  <testcase name="testCarFilters" time="0.021" classname="com.zhou.posidonautotest.vplay.CarRetrieval"/>
+  <testcase name="testCarAll" time="0.018" classname="com.zhou.posidonautotest.vplay.CarRetrieval"/>
+  <testcase name="testcarFunNews" time="0.158" classname="com.zhou.posidonautotest.vplay.CarRetrieval"/>
+  <testcase name="testFashionStarStyle" time="0.027" classname="com.zhou.posidonautotest.vplay.FashionRetrieval"/>
+  <testcase name="testFashionFilters" time="0.016" classname="com.zhou.posidonautotest.vplay.FashionRetrieval"/>
+  <testcase name="testFashionAll" time="0.016" classname="com.zhou.posidonautotest.vplay.FashionRetrieval"/>
+  <testcase name="testfightingBoxing" time="0.077" classname="com.zhou.posidonautotest.vplay.FightingRetrieval"/>
+  <testcase name="testFightingAll" time="0.017" classname="com.zhou.posidonautotest.vplay.FightingRetrieval"/>
+  <testcase name="testFightingFilters" time="0.015" classname="com.zhou.posidonautotest.vplay.FightingRetrieval"/>
+  <testcase name="testSquaredanceAll" time="0.071" classname="com.zhou.posidonautotest.vplay.SquaredanceRetrieval"/>
+  <testcase name="testSquaredanceTeaching" time="0.017" classname="com.zhou.posidonautotest.vplay.SquaredanceRetrieval"/>
+  <testcase name="testSquaredanceFilters" time="0.012" classname="com.zhou.posidonautotest.vplay.SquaredanceRetrieval"/>
+</testsuite>
