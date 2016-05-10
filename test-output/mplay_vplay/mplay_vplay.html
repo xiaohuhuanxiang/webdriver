@@ -1,0 +1,860 @@
+<html>
+<head>
+<title>TestNG:  mplay_vplay</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>mplay_vplay</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>73/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 10 13:19:53 CST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7158 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.NewsRetrieval.testNewsDomestic()'><b>testNewsDomestic</b><br>Test class: com.zhou.posidonautotest.vplay.NewsRetrieval<br/>
+<a href="#Output-514455215" onClick='toggleBox("Output-514455215", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-514455215" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-514455215">
+News Domestic :total > 0<br/>
+新闻<br/>
+http://pv.funshion.com/v5/video/retrieval?cl=mweb&uc=30&pg=1&sz=40&channel=1003&order=pi&cate=322&date=monthly<br/>
+assert rule : total > 0<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: total &gt; 0 expected:&lt;true&gt; but was:&lt;false&gt;
+	at com.zhou.posidonautotest.vplay.NewsRetrieval.testNewsDomestic(NewsRetrieval.java:60)
+	at com.zhou.run.PosidonRun2.main(PosidonRun2.java:66)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace514455215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace514455215'><pre>java.lang.AssertionError: total &gt; 0 expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at com.zhou.posidonautotest.vplay.NewsRetrieval.testNewsDomestic(NewsRetrieval.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at com.zhou.run.PosidonRun2.main(PosidonRun2.java:66)
+</pre></div></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.NewsRetrieval@490ab905</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.ScienceRetrieval.testScienceFilters()'><b>testScienceFilters</b><br>Test class: com.zhou.posidonautotest.vplay.ScienceRetrieval<br/>
+<a href="#Output-1509791656" onClick='toggleBox("Output-1509791656", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1509791656" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1509791656">
+科技<br/>
+http://pv.funshion.com/v5/video/filters?cl=mweb&uc=30&channel=1010<br/>
+assert rule :orders.options.size()>=2  &&  filters.options.size()>=2<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: testScienceFilters expected:&lt;true&gt; but was:&lt;false&gt;
+	at com.zhou.posidonautotest.vplay.ScienceRetrieval.testScienceFilters(ScienceRetrieval.java:30)
+	at com.zhou.run.PosidonRun2.main(PosidonRun2.java:66)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1509791656", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1509791656'><pre>java.lang.AssertionError: testScienceFilters expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at com.zhou.posidonautotest.vplay.ScienceRetrieval.testScienceFilters(ScienceRetrieval.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at com.zhou.run.PosidonRun2.main(PosidonRun2.java:66)
+</pre></div></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.ScienceRetrieval@72d818d1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.AnimalComicsRetrieval.testAnimalComicsAll()'><b>testAnimalComicsAll</b><br>Test class: com.zhou.posidonautotest.mplay.AnimalComicsRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.AnimalComicsRetrieval@5700d6b1</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.AnimalComicsRetrieval.testAnimalComicsDetail()'><b>testAnimalComicsDetail</b><br>Test class: com.zhou.posidonautotest.mplay.AnimalComicsRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.AnimalComicsRetrieval@5700d6b1</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.AnimalComicsRetrieval.testAnimalComicsFilters()'><b>testAnimalComicsFilters</b><br>Test class: com.zhou.posidonautotest.mplay.AnimalComicsRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.AnimalComicsRetrieval@5700d6b1</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.CarRetrieval.testCarAll()'><b>testCarAll</b><br>Test class: com.zhou.posidonautotest.vplay.CarRetrieval<br/>
+<a href="#Output-2005169944" onClick='toggleBox("Output-2005169944", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2005169944" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2005169944">
+Car Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.CarRetrieval@1ed4004b</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.CarRetrieval.testCarFilters()'><b>testCarFilters</b><br>Test class: com.zhou.posidonautotest.vplay.CarRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.CarRetrieval@1ed4004b</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.EPLRetrieval.testEPLAll()'><b>testEPLAll</b><br>Test class: com.zhou.posidonautotest.vplay.EPLRetrieval<br/>
+<a href="#Output-367746789" onClick='toggleBox("Output-367746789", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-367746789" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-367746789">
+EPL Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.EPLRetrieval@31a5c39e</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.EPLRetrieval.testEPLFilters()'><b>testEPLFilters</b><br>Test class: com.zhou.posidonautotest.vplay.EPLRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.EPLRetrieval@31a5c39e</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.EPLRetrieval.testEPLManchester()'><b>testEPLManchester</b><br>Test class: com.zhou.posidonautotest.vplay.EPLRetrieval<br/>
+<a href="#Output-1209702763" onClick='toggleBox("Output-1209702763", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1209702763" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1209702763">
+EPL Retrieval Manchester :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.EPLRetrieval@31a5c39e</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.EntertainmentRetrieval.testEntertainmentAll()'><b>testEntertainmentAll</b><br>Test class: com.zhou.posidonautotest.vplay.EntertainmentRetrieval<br/>
+<a href="#Output-771775563" onClick='toggleBox("Output-771775563", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-771775563" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-771775563">
+Entertainment Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.EntertainmentRetrieval@6e1567f1</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.EntertainmentRetrieval.testEntertainmentFilters()'><b>testEntertainmentFilters</b><br>Test class: com.zhou.posidonautotest.vplay.EntertainmentRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.EntertainmentRetrieval@6e1567f1</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.EntertainmentRetrieval.testEntertainmentHeadlines()'><b>testEntertainmentHeadlines</b><br>Test class: com.zhou.posidonautotest.vplay.EntertainmentRetrieval<br/>
+<a href="#Output-1202683709" onClick='toggleBox("Output-1202683709", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1202683709" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1202683709">
+Entertainment Headlines :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.EntertainmentRetrieval@6e1567f1</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.FashionRetrieval.testFashionAll()'><b>testFashionAll</b><br>Test class: com.zhou.posidonautotest.vplay.FashionRetrieval<br/>
+<a href="#Output-461160828" onClick='toggleBox("Output-461160828", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-461160828" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-461160828">
+Fashion Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.FashionRetrieval@ff5b51f</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.FashionRetrieval.testFashionFilters()'><b>testFashionFilters</b><br>Test class: com.zhou.posidonautotest.vplay.FashionRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.FashionRetrieval@ff5b51f</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.FashionRetrieval.testFashionStarStyle()'><b>testFashionStarStyle</b><br>Test class: com.zhou.posidonautotest.vplay.FashionRetrieval<br/>
+<a href="#Output-112049309" onClick='toggleBox("Output-112049309", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-112049309" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-112049309">
+Fighting Retrieval StarStyle :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.FashionRetrieval@ff5b51f</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.FightingRetrieval.testFightingAll()'><b>testFightingAll</b><br>Test class: com.zhou.posidonautotest.vplay.FightingRetrieval<br/>
+<a href="#Output-1954406292" onClick='toggleBox("Output-1954406292", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1954406292" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1954406292">
+Fighting Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.FightingRetrieval@25bbe1b6</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.FightingRetrieval.testFightingFilters()'><b>testFightingFilters</b><br>Test class: com.zhou.posidonautotest.vplay.FightingRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.FightingRetrieval@25bbe1b6</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.FilmRetrieval.testFilmAll()'><b>testFilmAll</b><br>Test class: com.zhou.posidonautotest.mplay.FilmRetrieval<br/>
+<a href="#Output-1199673596" onClick='toggleBox("Output-1199673596", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1199673596" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1199673596">
+Film Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.FilmRetrieval@56ef9176</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.FilmRetrieval.testFilmDetail()'><b>testFilmDetail</b><br>Test class: com.zhou.posidonautotest.mplay.FilmRetrieval<br/>
+<a href="#Output-1926343982" onClick='toggleBox("Output-1926343982", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1926343982" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1926343982">
+Film Detail :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.FilmRetrieval@56ef9176</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.FilmRetrieval.testFilmFilters()'><b>testFilmFilters</b><br>Test class: com.zhou.posidonautotest.mplay.FilmRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.FilmRetrieval@56ef9176</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.FunnyRetrieval.testFunnyAll()'><b>testFunnyAll</b><br>Test class: com.zhou.posidonautotest.vplay.FunnyRetrieval<br/>
+<a href="#Output-875016237" onClick='toggleBox("Output-875016237", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-875016237" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-875016237">
+Funny Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.FunnyRetrieval@3f49dace</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.FunnyRetrieval.testFunnyFilters()'><b>testFunnyFilters</b><br>Test class: com.zhou.posidonautotest.vplay.FunnyRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.FunnyRetrieval@3f49dace</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.FunnyRetrieval.testFunnyPetDaily()'><b>testFunnyPetDaily</b><br>Test class: com.zhou.posidonautotest.vplay.FunnyRetrieval<br/>
+<a href="#Output-1637290981" onClick='toggleBox("Output-1637290981", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1637290981" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1637290981">
+Funny PetDaily :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.FunnyRetrieval@3f49dace</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.GameRetrieval.testGameAll()'><b>testGameAll</b><br>Test class: com.zhou.posidonautotest.vplay.GameRetrieval<br/>
+<a href="#Output-574434418" onClick='toggleBox("Output-574434418", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-574434418" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-574434418">
+Game Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.GameRetrieval@4566e5bd</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.GameRetrieval.testGameFilters()'><b>testGameFilters</b><br>Test class: com.zhou.posidonautotest.vplay.GameRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.GameRetrieval@4566e5bd</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.GuessYouLike.testGuessYouLike()'><b>testGuessYouLike</b><br>Test class: com.zhou.posidonautotest.vplay.GuessYouLike<br/>
+<a href="#Output-787738361" onClick='toggleBox("Output-787738361", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-787738361" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-787738361">
+testGuessYouLike : blocks > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.GuessYouLike@1e397ed7</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.HotSpotRetrieval.testHotspotAll()'><b>testHotspotAll</b><br>Test class: com.zhou.posidonautotest.vplay.HotSpotRetrieval<br/>
+<a href="#Output-1496355635" onClick='toggleBox("Output-1496355635", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1496355635" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1496355635">
+Hotspot Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.HotSpotRetrieval@cb644e</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.HotSpotRetrieval.testHotspotFilters()'><b>testHotspotFilters</b><br>Test class: com.zhou.posidonautotest.vplay.HotSpotRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.HotSpotRetrieval@cb644e</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.HotSpotRetrieval.testHotspotThisMonth()'><b>testHotspotThisMonth</b><br>Test class: com.zhou.posidonautotest.vplay.HotSpotRetrieval<br/>
+<a href="#Output-78204644" onClick='toggleBox("Output-78204644", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-78204644" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-78204644">
+Hotspot ThisMonth :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.HotSpotRetrieval@cb644e</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.LifeRetrieval.testLifeAll()'><b>testLifeAll</b><br>Test class: com.zhou.posidonautotest.vplay.LifeRetrieval<br/>
+<a href="#Output-452805835" onClick='toggleBox("Output-452805835", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-452805835" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-452805835">
+Life Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.LifeRetrieval@27c20538</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.LifeRetrieval.testLifeFilters()'><b>testLifeFilters</b><br>Test class: com.zhou.posidonautotest.vplay.LifeRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.LifeRetrieval@27c20538</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.LifeRetrieval.testLifeSituation()'><b>testLifeSituation</b><br>Test class: com.zhou.posidonautotest.vplay.LifeRetrieval<br/>
+<a href="#Output-1438098656" onClick='toggleBox("Output-1438098656", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1438098656" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1438098656">
+Life Retrieval Food :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.LifeRetrieval@27c20538</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.MicrofilmRetrieval.testMicrofilmAll()'><b>testMicrofilmAll</b><br>Test class: com.zhou.posidonautotest.mplay.MicrofilmRetrieval<br/>
+<a href="#Output-1661081225" onClick='toggleBox("Output-1661081225", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1661081225" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1661081225">
+Microfilm Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.MicrofilmRetrieval@6fd02e5</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.MicrofilmRetrieval.testMicrofilmDetail()'><b>testMicrofilmDetail</b><br>Test class: com.zhou.posidonautotest.mplay.MicrofilmRetrieval<br/>
+<a href="#Output-1923598304" onClick='toggleBox("Output-1923598304", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1923598304" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1923598304">
+Microfilm Detail :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.MicrofilmRetrieval@6fd02e5</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.MicrofilmRetrieval.testMicrofilmFilters()'><b>testMicrofilmFilters</b><br>Test class: com.zhou.posidonautotest.mplay.MicrofilmRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.MicrofilmRetrieval@6fd02e5</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.MilitaryRetrieval.testMilitaryAll()'><b>testMilitaryAll</b><br>Test class: com.zhou.posidonautotest.vplay.MilitaryRetrieval<br/>
+<a href="#Output-609962972" onClick='toggleBox("Output-609962972", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-609962972" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-609962972">
+Military Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.MilitaryRetrieval@13805618</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.MilitaryRetrieval.testMilitaryFilters()'><b>testMilitaryFilters</b><br>Test class: com.zhou.posidonautotest.vplay.MilitaryRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.MilitaryRetrieval@13805618</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.MilitaryRetrieval.testMilitarySituation()'><b>testMilitarySituation</b><br>Test class: com.zhou.posidonautotest.vplay.MilitaryRetrieval<br/>
+<a href="#Output-1388278453" onClick='toggleBox("Output-1388278453", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1388278453" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1388278453">
+Military Retrieval Situation :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.MilitaryRetrieval@13805618</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.NewsRetrieval.testNewsAll()'><b>testNewsAll</b><br>Test class: com.zhou.posidonautotest.vplay.NewsRetrieval<br/>
+<a href="#Output-1357563986" onClick='toggleBox("Output-1357563986", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1357563986" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1357563986">
+News Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.NewsRetrieval@490ab905</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.NewsRetrieval.testNewsFilters()'><b>testNewsFilters</b><br>Test class: com.zhou.posidonautotest.vplay.NewsRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.NewsRetrieval@490ab905</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.ScienceRetrieval.testScienceAll()'><b>testScienceAll</b><br>Test class: com.zhou.posidonautotest.vplay.ScienceRetrieval<br/>
+<a href="#Output-257608164" onClick='toggleBox("Output-257608164", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-257608164" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-257608164">
+Science Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.ScienceRetrieval@72d818d1</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.ScienceRetrieval.testScienceSituation()'><b>testScienceSituation</b><br>Test class: com.zhou.posidonautotest.vplay.ScienceRetrieval<br/>
+<a href="#Output-858952163" onClick='toggleBox("Output-858952163", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-858952163" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-858952163">
+Military Retrieval Situation :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.ScienceRetrieval@72d818d1</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.SportsRetrieval.testSportsFilters()'><b>testSportsFilters</b><br>Test class: com.zhou.posidonautotest.vplay.SportsRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.SportsRetrieval@59494225</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.SquaredanceRetrieval.testSquaredanceAll()'><b>testSquaredanceAll</b><br>Test class: com.zhou.posidonautotest.vplay.SquaredanceRetrieval<br/>
+<a href="#Output-1118078504" onClick='toggleBox("Output-1118078504", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1118078504" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1118078504">
+Squaredance Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.SquaredanceRetrieval@5702b3b1</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.SquaredanceRetrieval.testSquaredanceFilters()'><b>testSquaredanceFilters</b><br>Test class: com.zhou.posidonautotest.vplay.SquaredanceRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.SquaredanceRetrieval@5702b3b1</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.SquaredanceRetrieval.testSquaredanceTeaching()'><b>testSquaredanceTeaching</b><br>Test class: com.zhou.posidonautotest.vplay.SquaredanceRetrieval<br/>
+<a href="#Output-1961945640" onClick='toggleBox("Output-1961945640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1961945640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1961945640">
+Squaredance Teaching :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.SquaredanceRetrieval@5702b3b1</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.TVSeriesRetrieval.testTVSeriesAll()'><b>testTVSeriesAll</b><br>Test class: com.zhou.posidonautotest.mplay.TVSeriesRetrieval<br/>
+<a href="#Output-1327006586" onClick='toggleBox("Output-1327006586", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1327006586" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1327006586">
+TVSeries Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.TVSeriesRetrieval@5cb9f472</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.TVSeriesRetrieval.testTVSeriesDetail()'><b>testTVSeriesDetail</b><br>Test class: com.zhou.posidonautotest.mplay.TVSeriesRetrieval<br/>
+<a href="#Output-1147580192" onClick='toggleBox("Output-1147580192", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1147580192" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1147580192">
+TVSeries Detail :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.TVSeriesRetrieval@5cb9f472</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.TVSeriesRetrieval.testTVSeriesFilters()'><b>testTVSeriesFilters</b><br>Test class: com.zhou.posidonautotest.mplay.TVSeriesRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.TVSeriesRetrieval@5cb9f472</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.TourismRetrieval.testTourismAll()'><b>testTourismAll</b><br>Test class: com.zhou.posidonautotest.vplay.TourismRetrieval<br/>
+<a href="#Output-1820383114" onClick='toggleBox("Output-1820383114", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1820383114" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1820383114">
+Tourism Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.TourismRetrieval@6e06451e</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.TourismRetrieval.testTourismFilters()'><b>testTourismFilters</b><br>Test class: com.zhou.posidonautotest.vplay.TourismRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.TourismRetrieval@6e06451e</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.VarietyShowRetrieval.testVarietyShowAll()'><b>testVarietyShowAll</b><br>Test class: com.zhou.posidonautotest.mplay.VarietyShowRetrieval<br/>
+<a href="#Output-884452399" onClick='toggleBox("Output-884452399", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-884452399" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-884452399">
+VarietyShow Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.VarietyShowRetrieval@5bcab519</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.VarietyShowRetrieval.testVarietyShowDetail()'><b>testVarietyShowDetail</b><br>Test class: com.zhou.posidonautotest.mplay.VarietyShowRetrieval<br/>
+<a href="#Output-644345897" onClick='toggleBox("Output-644345897", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-644345897" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-644345897">
+VarietyShow Detail :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.VarietyShowRetrieval@5bcab519</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.VarietyShowRetrieval.testVarietyShowFilters()'><b>testVarietyShowFilters</b><br>Test class: com.zhou.posidonautotest.mplay.VarietyShowRetrieval</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.VarietyShowRetrieval@5bcab519</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibrary()'><b>testVideoLibrary</b><br>Test class: com.zhou.posidonautotest.mplay.VideoLibrary<br/>
+<a href="#Output-2068434592" onClick='toggleBox("Output-2068434592", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2068434592" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2068434592">
+VideoLibrary : blocks > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.VideoLibrary@e45f292</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibraryAnimalComics()'><b>testVideoLibraryAnimalComics</b><br>Test class: com.zhou.posidonautotest.mplay.VideoLibrary<br/>
+<a href="#Output-251210093" onClick='toggleBox("Output-251210093", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-251210093" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-251210093">
+VideoLibrary AnimalComics : total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.VideoLibrary@e45f292</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibraryAnimalComicsFilters()'><b>testVideoLibraryAnimalComicsFilters</b><br>Test class: com.zhou.posidonautotest.mplay.VideoLibrary</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.VideoLibrary@e45f292</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibraryFilm()'><b>testVideoLibraryFilm</b><br>Test class: com.zhou.posidonautotest.mplay.VideoLibrary<br/>
+<a href="#Output-479397964" onClick='toggleBox("Output-479397964", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-479397964" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-479397964">
+VideoLibrary Film : total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.VideoLibrary@e45f292</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibraryFilmFilters()'><b>testVideoLibraryFilmFilters</b><br>Test class: com.zhou.posidonautotest.mplay.VideoLibrary</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.VideoLibrary@e45f292</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibraryTVseries()'><b>testVideoLibraryTVseries</b><br>Test class: com.zhou.posidonautotest.mplay.VideoLibrary<br/>
+<a href="#Output-2025221430" onClick='toggleBox("Output-2025221430", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2025221430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2025221430">
+VideoLibrary TVseries : total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.VideoLibrary@e45f292</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibraryTVseriesFilters()'><b>testVideoLibraryTVseriesFilters</b><br>Test class: com.zhou.posidonautotest.mplay.VideoLibrary</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.VideoLibrary@e45f292</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibraryVarietyShowFilters()'><b>testVideoLibraryVarietyShowFilters</b><br>Test class: com.zhou.posidonautotest.mplay.VideoLibrary</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.VideoLibrary@e45f292</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.mplay.VideoLibrary.testVideoLibraryVarietyshow()'><b>testVideoLibraryVarietyshow</b><br>Test class: com.zhou.posidonautotest.mplay.VideoLibrary<br/>
+<a href="#Output-581318631" onClick='toggleBox("Output-581318631", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-581318631" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-581318631">
+VideoLibrary Varietyshow : total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.mplay.VideoLibrary@e45f292</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.VideoNumber.testVideoNumberclasslist()'><b>testVideoNumberclasslist</b><br>Test class: com.zhou.posidonautotest.vplay.VideoNumber<br/>
+<a href="#Output-1989184704" onClick='toggleBox("Output-1989184704", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1989184704" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1989184704">
+VideoNumber : classlist > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.VideoNumber@56ac3a89</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.VideoNumber.testVideoNumberlist()'><b>testVideoNumberlist</b><br>Test class: com.zhou.posidonautotest.vplay.VideoNumber<br/>
+<a href="#Output-1990160809" onClick='toggleBox("Output-1990160809", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1990160809" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1990160809">
+VideoNumber : list > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.VideoNumber@56ac3a89</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vip.Vip.testVipFilter()'><b>testVipFilter</b><br>Test class: com.zhou.posidonautotest.vip.Vip</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vip.Vip@5f2108b5</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vip.Vip.testVipNavigation()'><b>testVipNavigation</b><br>Test class: com.zhou.posidonautotest.vip.Vip</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vip.Vip@5f2108b5</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vip.Vip.testVipRetrieval()'><b>testVipRetrieval</b><br>Test class: com.zhou.posidonautotest.vip.Vip</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vip.Vip@5f2108b5</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.CarRetrieval.testcarFunNews()'><b>testcarFunNews</b><br>Test class: com.zhou.posidonautotest.vplay.CarRetrieval<br/>
+<a href="#Output-2131670196" onClick='toggleBox("Output-2131670196", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2131670196" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2131670196">
+car FunNews :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.CarRetrieval@1ed4004b</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.FightingRetrieval.testfightingBoxing()'><b>testfightingBoxing</b><br>Test class: com.zhou.posidonautotest.vplay.FightingRetrieval<br/>
+<a href="#Output-440938038" onClick='toggleBox("Output-440938038", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-440938038" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-440938038">
+Fighting Retrieval Boxing :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.FightingRetrieval@25bbe1b6</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.GameRetrieval.testgameCompetition()'><b>testgameCompetition</b><br>Test class: com.zhou.posidonautotest.vplay.GameRetrieval<br/>
+<a href="#Output-2114444063" onClick='toggleBox("Output-2114444063", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2114444063" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2114444063">
+game Competition :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.GameRetrieval@4566e5bd</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.SportsRetrieval.testsportsAll()'><b>testsportsAll</b><br>Test class: com.zhou.posidonautotest.vplay.SportsRetrieval<br/>
+<a href="#Output-1021436681" onClick='toggleBox("Output-1021436681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1021436681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1021436681">
+Sports Retrieval All :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.SportsRetrieval@59494225</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.SportsRetrieval.testsportsBasketball()'><b>testsportsBasketball</b><br>Test class: com.zhou.posidonautotest.vplay.SportsRetrieval<br/>
+<a href="#Output-854587510" onClick='toggleBox("Output-854587510", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-854587510" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-854587510">
+sports Basketball :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.SportsRetrieval@59494225</td></tr>
+<tr>
+<td title='com.zhou.posidonautotest.vplay.TourismRetrieval.testtourismGlobalGossip()'><b>testtourismGlobalGossip</b><br>Test class: com.zhou.posidonautotest.vplay.TourismRetrieval<br/>
+<a href="#Output-1636182655" onClick='toggleBox("Output-1636182655", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1636182655" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1636182655">
+tourism GlobalGossip :total > 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.posidonautotest.vplay.TourismRetrieval@6e06451e</td></tr>
+</table><p>
+</body>
+</html>

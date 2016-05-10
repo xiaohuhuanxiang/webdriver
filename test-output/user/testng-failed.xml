@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [user]">
+  <test name="user(failed)" preserve-order="false">
+    <classes>
+      <class name="com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny">
+        <methods>
+          <include name="testEntertainment"/>
+          <include name="PauseAndPlay"/>
+          <include name="nextAndPlay"/>
+          <include name="news"/>
+          <include name="testClickSkip"/>
+          <include name="funny"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.user.M1_fun_tv_home_user11_man">
+        <methods>
+          <include name="setUp"/>
+          <include name="testmilitary"/>
+          <include name="testClickSkip"/>
+          <include name="fighting"/>
+          <include name="car"/>
+          <include name="PauseAndPlay"/>
+          <include name="science"/>
+          <include name="game"/>
+          <include name="sports"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.user.SetupAndTearDown">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.user.M1_fun_tv_home_user5_Search">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.user.M1_fun_tv_home_user6_VideoLibrary">
+        <methods>
+          <include name="testLocationAndScroll"/>
+          <include name="setUp"/>
+          <include name="testClickSkip"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow">
+        <methods>
+          <include name="testHeaderTab"/>
+          <include name="testRecentlyWatched"/>
+          <include name="testClearRecentlyWatched"/>
+          <include name="setUp"/>
+          <include name="testClickSkip"/>
+          <include name="testPlayAndPause"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries">
+        <methods>
+          <include name="testLocalStorage"/>
+          <include name="testClickSkip"/>
+          <include name="setUp"/>
+          <include name="testCookie"/>
+          <include name="testEpisodes"/>
+          <include name="testTVSeries"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot">
+        <methods>
+          <include name="testClickSkip"/>
+          <include name="hotclick"/>
+          <include name="testLocalStorage"/>
+          <include name="setUp"/>
+          <include name="backford"/>
+          <include name="testCookie"/>
+          <include name="PauseAndPlay"/>
+          <include name="testAnimalComics"/>
+          <include name="hot"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.user.M1_fun_tv_home_user10_woman">
+        <methods>
+          <include name="testSquaredance"/>
+          <include name="setUp"/>
+          <include name="fashion"/>
+          <include name="testClickSkip"/>
+          <include name="life"/>
+          <include name="PauseAndPlay"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.user.M1_fun_tv_home_user2_Film">
+        <methods>
+          <include name="testFilm"/>
+          <include name="setUp"/>
+          <include name="testClickSkip"/>
+          <include name="testLocalStorage"/>
+          <include name="testCookie"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

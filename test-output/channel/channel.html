@@ -1,0 +1,246 @@
+<html>
+<head>
+<title>TestNG:  channel</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>channel</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Apr 22 13:32:59 CST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>251 seconds (251875 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall.testBigAndSmall()'><b>testBigAndSmall</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall<br/>
+<a href="#Output-769798433" onClick='toggleBox("Output-769798433", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-769798433" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-769798433">
+http://m.fun.tv/mplay/?mid=14586<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall@1f36e637</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage.testClearCookie()'><b>testClearCookie</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage<br/>
+<a href="#Output-187472540" onClick='toggleBox("Output-187472540", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-187472540" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-187472540">
+homepage clear cookies ,then assert cookie size is 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage@2b552920</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage.testClearLocalstorage()'><b>testClearLocalstorage</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage<br/>
+<a href="#Output-612097453" onClick='toggleBox("Output-612097453", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-612097453" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-612097453">
+homepage clear LocalStorage,then assert localStorage Size is 0 <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage@2b552920</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage</td>
+<td></td>
+<td>17</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage@2b552920</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_mplay.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_mplay</td>
+<td></td>
+<td>3</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_mplay@2758fe70</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall</td>
+<td></td>
+<td>6</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall@1f36e637</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_vplay.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_vplay</td>
+<td></td>
+<td>3</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_vplay@578486a3</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_vplay_malliance.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_vplay_malliance</td>
+<td></td>
+<td>3</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_vplay_malliance@551aa95a</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage.testFUNCookies()'><b>testFUNCookies</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage<br/>
+<a href="#Output-1792550665" onClick='toggleBox("Output-1792550665", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1792550665" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1792550665">
+homepage  uc=30,intercept=1 <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage@2b552920</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall.testFUNCookies()'><b>testFUNCookies</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall@1f36e637</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_vplay_malliance.testFUNCookies()'><b>testFUNCookies</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_vplay_malliance</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_vplay_malliance@551aa95a</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage.testFUNLocalstorage()'><b>testFUNLocalstorage</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage<br/>
+<a href="#Output-262457445" onClick='toggleBox("Output-262457445", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-262457445" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-262457445">
+homepage assert localstorageSize is 3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage@2b552920</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_vplay_malliance.testPauseAndFullPlay()'><b>testPauseAndFullPlay</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_vplay_malliance<br/>
+<a href="#Output-1169474473" onClick='toggleBox("Output-1169474473", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1169474473" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1169474473">
+http://m.fun.tv/vplay/?vid=8064250&malliance=2242<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_vplay_malliance@551aa95a</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_mplay.testPauseAndPlay()'><b>testPauseAndPlay</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_mplay<br/>
+<a href="#Output-951050903" onClick='toggleBox("Output-951050903", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-951050903" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-951050903">
+http://m.fun.tv/mplay/?mid=14586<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_mplay@2758fe70</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall.testPauseAndPlay()'><b>testPauseAndPlay</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall<br/>
+<a href="#Output-1074389766" onClick='toggleBox("Output-1074389766", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1074389766" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1074389766">
+http://m.fun.tv/mplay/?mid=14586<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall@1f36e637</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_vplay.testPauseAndPlay()'><b>testPauseAndPlay</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_vplay<br/>
+<a href="#Output-2106000623" onClick='toggleBox("Output-2106000623", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2106000623" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2106000623">
+http://m.fun.tv/vplay/?vid=8046326<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_vplay@578486a3</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_vplay.testPlayNext()'><b>testPlayNext</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_vplay<br/>
+<a href="#Output-2044215423" onClick='toggleBox("Output-2044215423", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2044215423" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2044215423">
+http://m.fun.tv/vplay/?vid=8046326<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_vplay@578486a3</td></tr>
+<tr>
+<td title='com.zhou.autotest.channel.M1_fun_tv_vplay_malliance.testPlayNext()'><b>testPlayNext</b><br>Test class: com.zhou.autotest.channel.M1_fun_tv_vplay_malliance<br/>
+<a href="#Output-504858437" onClick='toggleBox("Output-504858437", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-504858437" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-504858437">
+http://m.fun.tv/vplay/?vid=8064250&malliance=2242<br/>
+</div>
+</td>
+<td></td>
+<td>87</td>
+<td>com.zhou.autotest.channel.M1_fun_tv_vplay_malliance@551aa95a</td></tr>
+</table><p>
+</body>
+</html>

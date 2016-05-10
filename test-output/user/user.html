@@ -1,0 +1,1071 @@
+<html>
+<head>
+<title>TestNG:  user</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>user</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>28/8/23</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Apr 22 13:37:16 CST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>507 seconds (507536 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny.PauseAndPlay()'><b>PauseAndPlay</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny<br/>
+<a href="#Output-1466785259" onClick='toggleBox("Output-1466785259", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1466785259" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1466785259">
+<img src="../2016_04_22_13_45_12_PauseAndPlay.jpg"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Cannot read property &apos;pause&apos; of null
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.25.0&apos;, revision: &apos;17482&apos;, time: &apos;2012-07-18 21:08:56&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.M1_fun_tv_home_common.PauseAndFullPlay(M1_fun_tv_home_common.java:131)
+	at com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny.PauseAndPlay(M1_fun_tv_home_user9_EntertainmentNewsFunny.java:98)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1466785259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1466785259'><pre>org.openqa.selenium.WebDriverException: unknown error: Cannot read property 'pause' of null
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.M1_fun_tv_home_common.PauseAndFullPlay(M1_fun_tv_home_common.java:131)
+	at com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny.PauseAndPlay(M1_fun_tv_home_user9_EntertainmentNewsFunny.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at com.zhou.run.Run2.main(Run2.java:81)
+</pre></div></td>
+<td>15</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny@1f7030a6</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries<br/>
+<a href="#Output-515184459" onClick='toggleBox("Output-515184459", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-515184459" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-515184459">
+<img src="../2016_04_22_13_40_42_testClickSkip.jpg"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.25.0&apos;, revision: &apos;17482&apos;, time: &apos;2012-07-18 21:08:56&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:353)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:260)
+	at com.zhou.autotest.M1_fun_tv_home_common.ClickSkip(M1_fun_tv_home_common.java:63)
+	at com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries.testClickSkip(M1_fun_tv_home_user3_TVSeries.java:60)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace515184459", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace515184459'><pre>org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:353)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:260)
+	at com.zhou.autotest.M1_fun_tv_home_common.ClickSkip(M1_fun_tv_home_common.java:63)
+	at com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries.testClickSkip(M1_fun_tv_home_user3_TVSeries.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at com.zhou.run.Run2.main(Run2.java:81)
+</pre></div></td>
+<td>3</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries@64729b1e</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow.testHeaderTab()'><b>testHeaderTab</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow<br/>
+<a href="#Output-504053874" onClick='toggleBox("Output-504053874", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-504053874" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-504053874">
+<img src="../2016_04_22_13_45_39_testHeaderTab.jpg"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Cannot read property &apos;click&apos; of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: &apos;2.25.0&apos;, revision: &apos;17482&apos;, time: &apos;2012-07-18 21:08:56&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow.testHeaderTab(M1_fun_tv_home_user_VarietyShow.java:83)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace504053874", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace504053874'><pre>org.openqa.selenium.WebDriverException: unknown error: Cannot read property 'click' of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow.testHeaderTab(M1_fun_tv_home_user_VarietyShow.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at com.zhou.run.Run2.main(Run2.java:81)
+</pre></div></td>
+<td>15</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow@5a1c0542</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user2_Film.testLocalStorage()'><b>testLocalStorage</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user2_Film<br/>
+<a href="#Output-931480286" onClick='toggleBox("Output-931480286", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-931480286" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-931480286">
+<img src="../2016_04_22_13_40_38_testLocalStorage.jpg"/><br/>
+</div>
+</td>
+<td><div><pre>net.sf.json.JSONException: null object
+	at net.sf.json.JSONObject.verifyIsNull(JSONObject.java:2498)
+	at net.sf.json.JSONObject.get(JSONObject.java:1712)
+	at com.zhou.autotest.M1_fun_tv_home_common.LocalStorage(M1_fun_tv_home_common.java:268)
+	at com.zhou.autotest.user.M1_fun_tv_home_user2_Film.testLocalStorage(M1_fun_tv_home_user2_Film.java:114)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace931480286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace931480286'><pre>net.sf.json.JSONException: null object
+	at net.sf.json.JSONObject.verifyIsNull(JSONObject.java:2498)
+	at net.sf.json.JSONObject.get(JSONObject.java:1712)
+	at com.zhou.autotest.M1_fun_tv_home_common.LocalStorage(M1_fun_tv_home_common.java:268)
+	at com.zhou.autotest.user.M1_fun_tv_home_user2_Film.testLocalStorage(M1_fun_tv_home_user2_Film.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at com.zhou.run.Run2.main(Run2.java:81)
+</pre></div></td>
+<td>3</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user2_Film@4e7dc304</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot.testLocalStorage()'><b>testLocalStorage</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot<br/>
+<a href="#Output-1219273867" onClick='toggleBox("Output-1219273867", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1219273867" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1219273867">
+<img src="../2016_04_22_13_44_26_testLocalStorage.jpg"/><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: local storage : assert url ,vtitle expected:&lt;true&gt; but was:&lt;false&gt;
+	at com.zhou.autotest.M1_fun_tv_home_common.LocalStorage(M1_fun_tv_home_common.java:284)
+	at com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot.testLocalStorage(M1_fun_tv_home_user8_AnimalComicsHotSpot.java:107)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1219273867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1219273867'><pre>java.lang.AssertionError: local storage : assert url ,vtitle expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at com.zhou.autotest.M1_fun_tv_home_common.LocalStorage(M1_fun_tv_home_common.java:284)
+	at com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot.testLocalStorage(M1_fun_tv_home_user8_AnimalComicsHotSpot.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at com.zhou.run.Run2.main(Run2.java:81)
+</pre></div></td>
+<td>3</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot@56aac163</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user6_VideoLibrary.testLocationAndScroll()'><b>testLocationAndScroll</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user6_VideoLibrary<br/>
+<a href="#Output-1497018177" onClick='toggleBox("Output-1497018177", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1497018177" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1497018177">
+<img src="../2016_04_22_13_42_57_testLocationAndScroll.jpg"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Cannot read property &apos;click&apos; of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: &apos;2.25.0&apos;, revision: &apos;17482&apos;, time: &apos;2012-07-18 21:08:56&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.user.M1_fun_tv_home_user6_VideoLibrary.testLocationAndScroll(M1_fun_tv_home_user6_VideoLibrary.java:100)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1497018177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1497018177'><pre>org.openqa.selenium.WebDriverException: unknown error: Cannot read property 'click' of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.user.M1_fun_tv_home_user6_VideoLibrary.testLocationAndScroll(M1_fun_tv_home_user6_VideoLibrary.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at com.zhou.run.Run2.main(Run2.java:81)
+</pre></div></td>
+<td>12</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user6_VideoLibrary@6895a785</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user10_woman.testSquaredance()'><b>testSquaredance</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user10_woman<br/>
+<a href="#Output-101775274" onClick='toggleBox("Output-101775274", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-101775274" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-101775274">
+<img src="../2016_04_22_13_38_24_testSquaredance.jpg"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Cannot read property &apos;click&apos; of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 47.58 seconds
+Build info: version: &apos;2.25.0&apos;, revision: &apos;17482&apos;, time: &apos;2012-07-18 21:08:56&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.M1_fun_tv_home_common.excutejs(M1_fun_tv_home_common.java:216)
+	at com.zhou.autotest.user.M1_fun_tv_home_user10_woman.testSquaredance(M1_fun_tv_home_user10_woman.java:87)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace101775274", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace101775274'><pre>org.openqa.selenium.WebDriverException: unknown error: Cannot read property 'click' of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 47.58 seconds
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.M1_fun_tv_home_common.excutejs(M1_fun_tv_home_common.java:216)
+	at com.zhou.autotest.user.M1_fun_tv_home_user10_woman.testSquaredance(M1_fun_tv_home_user10_woman.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at com.zhou.run.Run2.main(Run2.java:81)
+</pre></div></td>
+<td>52</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user10_woman@23faf8f2</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user11_man.testmilitary()'><b>testmilitary</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user11_man<br/>
+<a href="#Output-195381554" onClick='toggleBox("Output-195381554", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-195381554" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-195381554">
+<img src="../2016_04_22_13_39_31_testmilitary.jpg"/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Cannot read property &apos;click&apos; of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 44.44 seconds
+Build info: version: &apos;2.25.0&apos;, revision: &apos;17482&apos;, time: &apos;2012-07-18 21:08:56&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.M1_fun_tv_home_common.excutejs(M1_fun_tv_home_common.java:216)
+	at com.zhou.autotest.user.M1_fun_tv_home_user11_man.testmilitary(M1_fun_tv_home_user11_man.java:88)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace195381554", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace195381554'><pre>org.openqa.selenium.WebDriverException: unknown error: Cannot read property 'click' of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 44.44 seconds
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.M1_fun_tv_home_common.excutejs(M1_fun_tv_home_common.java:216)
+	at com.zhou.autotest.user.M1_fun_tv_home_user11_man.testmilitary(M1_fun_tv_home_user11_man.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:76)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at com.zhou.run.Run2.main(Run2.java:81)
+</pre></div></td>
+<td>49</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user11_man@2d6eabae</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm.PauseAndPlay()'><b>PauseAndPlay</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm</td>
+<td></td>
+<td>26</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm@184f6be2</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm.briefIntroduction()'><b>briefIntroduction</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm@184f6be2</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot.testAnimalComics()'><b>testAnimalComics</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot</td>
+<td></td>
+<td>19</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot@56aac163</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user10_woman.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user10_woman</td>
+<td></td>
+<td>11</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user10_woman@23faf8f2</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user11_man.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user11_man</td>
+<td></td>
+<td>13</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user11_man@2d6eabae</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user2_Film.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user2_Film</td>
+<td></td>
+<td>6</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user2_Film@4e7dc304</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment</td>
+<td></td>
+<td>6</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment@10bbd20a</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user5_Search.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user5_Search</td>
+<td></td>
+<td>6</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user5_Search@48503868</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user6_VideoLibrary.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user6_VideoLibrary</td>
+<td></td>
+<td>6</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user6_VideoLibrary@6895a785</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm</td>
+<td></td>
+<td>6</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm@184f6be2</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot</td>
+<td></td>
+<td>6</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot@56aac163</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny</td>
+<td></td>
+<td>6</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny@1f7030a6</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow.testClickSkip()'><b>testClickSkip</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow</td>
+<td></td>
+<td>6</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow@5a1c0542</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user2_Film.testCookie()'><b>testCookie</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user2_Film<br/>
+<a href="#Output-752684363" onClick='toggleBox("Output-752684363", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-752684363" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-752684363">
+homepage  intercept=1 <br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user2_Film@4e7dc304</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment.testCookie()'><b>testCookie</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment<br/>
+<a href="#Output-509891820" onClick='toggleBox("Output-509891820", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-509891820" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-509891820">
+http://m.fun.tv/vplay/?vid=8168924<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment@10bbd20a</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm.testCookie()'><b>testCookie</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm<br/>
+<a href="#Output-9797126" onClick='toggleBox("Output-9797126", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9797126" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9797126">
+homepage  intercept=1 <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm@184f6be2</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot.testCookie()'><b>testCookie</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot<br/>
+<a href="#Output-690052870" onClick='toggleBox("Output-690052870", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-690052870" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-690052870">
+homepage  intercept=1 <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot@56aac163</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny.testEntertainment()'><b>testEntertainment</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny</td>
+<td></td>
+<td>19</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny@1f7030a6</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user2_Film.testFilm()'><b>testFilm</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user2_Film</td>
+<td></td>
+<td>20</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user2_Film@4e7dc304</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment.testLocalStorage()'><b>testLocalStorage</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment<br/>
+<a href="#Output-370370379" onClick='toggleBox("Output-370370379", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-370370379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-370370379">
+http://m.fun.tv/vplay/?vid=8168924<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment@10bbd20a</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm.testLocalStorage()'><b>testLocalStorage</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm</td>
+<td></td>
+<td>3</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm@184f6be2</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm.testMicroFilm()'><b>testMicroFilm</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm</td>
+<td></td>
+<td>21</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm@184f6be2</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment.testNextAndLocalStorage()'><b>testNextAndLocalStorage</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment<br/>
+<a href="#Output-1652807864" onClick='toggleBox("Output-1652807864", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1652807864" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1652807864">
+http://m.fun.tv/vplay/?vid=8168924<br/>
+</div>
+</td>
+<td></td>
+<td>62</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment@10bbd20a</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user5_Search.testPlayShow()'><b>testPlayShow</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user5_Search</td>
+<td></td>
+<td>3</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user5_Search@48503868</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user5_Search.testRecentSearchLocalStorage()'><b>testRecentSearchLocalStorage</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user5_Search</td>
+<td></td>
+<td>6</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user5_Search@48503868</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user5_Search.testSearch()'><b>testSearch</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user5_Search</td>
+<td></td>
+<td>12</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user5_Search@48503868</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user5_Search.testTextShow()'><b>testTextShow</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user5_Search</td>
+<td></td>
+<td>0</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user5_Search@48503868</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment.testVplay()'><b>testVplay</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment<br/>
+<a href="#Output-1107217291" onClick='toggleBox("Output-1107217291", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1107217291" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1107217291">
+http://m.fun.tv/<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment@10bbd20a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user10_woman.PauseAndPlay()'><b>PauseAndPlay</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user10_woman<br/>
+<a href="#Output-938545229" onClick='toggleBox("Output-938545229", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-938545229" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-938545229">
+<img src="../2016_04_22_13_38_24_PauseAndPlay.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user11_man.PauseAndPlay()'><b>PauseAndPlay</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user11_man<br/>
+<a href="#Output-960733886" onClick='toggleBox("Output-960733886", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-960733886" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-960733886">
+<img src="../2016_04_22_13_39_31_PauseAndPlay.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot.PauseAndPlay()'><b>PauseAndPlay</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot<br/>
+<a href="#Output-194707680" onClick='toggleBox("Output-194707680", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-194707680" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-194707680">
+<img src="../2016_04_22_13_44_27_PauseAndPlay.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot.backford()'><b>backford</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot<br/>
+<a href="#Output-2102368942" onClick='toggleBox("Output-2102368942", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2102368942" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2102368942">
+<img src="../2016_04_22_13_44_28_backford.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user11_man.car()'><b>car</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user11_man<br/>
+<a href="#Output-594427726" onClick='toggleBox("Output-594427726", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-594427726" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-594427726">
+<img src="../2016_04_22_13_39_32_car.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user10_woman.fashion()'><b>fashion</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user10_woman<br/>
+<a href="#Output-1610702581" onClick='toggleBox("Output-1610702581", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1610702581" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1610702581">
+<img src="../2016_04_22_13_38_25_fashion.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user11_man.fighting()'><b>fighting</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user11_man<br/>
+<a href="#Output-1810899357" onClick='toggleBox("Output-1810899357", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1810899357" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1810899357">
+<img src="../2016_04_22_13_39_32_fighting.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny.funny()'><b>funny</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny<br/>
+<a href="#Output-1876682596" onClick='toggleBox("Output-1876682596", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1876682596" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1876682596">
+<img src="../2016_04_22_13_45_16_funny.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user11_man.game()'><b>game</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user11_man<br/>
+<a href="#Output-1595282218" onClick='toggleBox("Output-1595282218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1595282218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1595282218">
+<img src="../2016_04_22_13_39_32_game.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot.hot()'><b>hot</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot<br/>
+<a href="#Output-1424082571" onClick='toggleBox("Output-1424082571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1424082571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1424082571">
+<img src="../2016_04_22_13_44_29_hot.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot.hotclick()'><b>hotclick</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot<br/>
+<a href="#Output-1387380406" onClick='toggleBox("Output-1387380406", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1387380406" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1387380406">
+<img src="../2016_04_22_13_44_30_hotclick.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user10_woman.life()'><b>life</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user10_woman<br/>
+<a href="#Output-270056930" onClick='toggleBox("Output-270056930", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-270056930" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-270056930">
+<img src="../2016_04_22_13_38_27_life.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny.news()'><b>news</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny<br/>
+<a href="#Output-1297502382" onClick='toggleBox("Output-1297502382", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1297502382" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1297502382">
+<img src="../2016_04_22_13_45_15_news.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny.nextAndPlay()'><b>nextAndPlay</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny<br/>
+<a href="#Output-775514090" onClick='toggleBox("Output-775514090", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-775514090" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-775514090">
+<img src="../2016_04_22_13_45_13_nextAndPlay.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user11_man.science()'><b>science</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user11_man<br/>
+<a href="#Output-360207322" onClick='toggleBox("Output-360207322", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-360207322" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-360207322">
+<img src="../2016_04_22_13_39_32_science.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user11_man.sports()'><b>sports</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user11_man<br/>
+<a href="#Output-57497692" onClick='toggleBox("Output-57497692", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-57497692" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-57497692">
+<img src="../2016_04_22_13_39_32_sports.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow.testClearRecentlyWatched()'><b>testClearRecentlyWatched</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow<br/>
+<a href="#Output-1101048445" onClick='toggleBox("Output-1101048445", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1101048445" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1101048445">
+<img src="../2016_04_22_13_45_42_testClearRecentlyWatched.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries.testCookie()'><b>testCookie</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries<br/>
+<a href="#Output-1768792843" onClick='toggleBox("Output-1768792843", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1768792843" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1768792843">
+<img src="../2016_04_22_13_40_42_testCookie.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries.testEpisodes()'><b>testEpisodes</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries<br/>
+<a href="#Output-702846463" onClick='toggleBox("Output-702846463", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-702846463" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-702846463">
+<img src="../2016_04_22_13_40_43_testEpisodes.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries.testLocalStorage()'><b>testLocalStorage</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries<br/>
+<a href="#Output-1402433372" onClick='toggleBox("Output-1402433372", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1402433372" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1402433372">
+<img src="../2016_04_22_13_40_42_testLocalStorage.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow.testPlayAndPause()'><b>testPlayAndPause</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow<br/>
+<a href="#Output-953082513" onClick='toggleBox("Output-953082513", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-953082513" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-953082513">
+<img src="../2016_04_22_13_45_40_testPlayAndPause.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow.testRecentlyWatched()'><b>testRecentlyWatched</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow<br/>
+<a href="#Output-252277567" onClick='toggleBox("Output-252277567", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-252277567" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-252277567">
+<img src="../2016_04_22_13_45_41_testRecentlyWatched.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries.testTVSeries()'><b>testTVSeries</b><br>Test class: com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries<br/>
+<a href="#Output-1926096844" onClick='toggleBox("Output-1926096844", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1926096844" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1926096844">
+<img src="../2016_04_22_13_40_42_testTVSeries.jpg"/><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>

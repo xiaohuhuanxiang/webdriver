@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="FX-JSJ800" name="com.zhou.autotest.user.M1_fun_tv_home_user10_woman" tests="59" failures="8" timestamp="22 Apr 2016 05:45:43 GMT" time="507.536" errors="0">
+  <testcase name="testClickSkip" time="11.053" classname="com.zhou.autotest.user.M1_fun_tv_home_user10_woman"/>
+  <testcase name="testSquaredance" time="52.762" classname="com.zhou.autotest.user.M1_fun_tv_home_user10_woman">
+    <failure type="org.openqa.selenium.WebDriverException" message="unknown error: Cannot read property &amp;apos;click&amp;apos; of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 47.58 seconds
+Build info: version: &amp;apos;2.25.0&amp;apos;, revision: &amp;apos;17482&amp;apos;, time: &amp;apos;2012-07-18 21:08:56&amp;apos;
+System info: os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.8.0_66&amp;apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320">
+      <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Cannot read property 'click' of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 47.58 seconds
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.M1_fun_tv_home_common.excutejs(M1_fun_tv_home_common.java:216)
+	at com.zhou.autotest.user.M1_fun_tv_home_user10_woman.testSquaredance(M1_fun_tv_home_user10_woman.java:87)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="PauseAndPlay" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user10_woman">
+    <skipped/>
+  </testcase>
+  <testcase name="fashion" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user10_woman">
+    <skipped/>
+  </testcase>
+  <testcase name="life" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user10_woman">
+    <skipped/>
+  </testcase>
+  <testcase name="testClickSkip" time="13.489" classname="com.zhou.autotest.user.M1_fun_tv_home_user11_man"/>
+  <testcase name="testmilitary" time="49.608" classname="com.zhou.autotest.user.M1_fun_tv_home_user11_man">
+    <failure type="org.openqa.selenium.WebDriverException" message="unknown error: Cannot read property &amp;apos;click&amp;apos; of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 44.44 seconds
+Build info: version: &amp;apos;2.25.0&amp;apos;, revision: &amp;apos;17482&amp;apos;, time: &amp;apos;2012-07-18 21:08:56&amp;apos;
+System info: os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.8.0_66&amp;apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320">
+      <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Cannot read property 'click' of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 44.44 seconds
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.M1_fun_tv_home_common.excutejs(M1_fun_tv_home_common.java:216)
+	at com.zhou.autotest.user.M1_fun_tv_home_user11_man.testmilitary(M1_fun_tv_home_user11_man.java:88)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="PauseAndPlay" time="0.001" classname="com.zhou.autotest.user.M1_fun_tv_home_user11_man">
+    <skipped/>
+  </testcase>
+  <testcase name="science" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user11_man">
+    <skipped/>
+  </testcase>
+  <testcase name="car" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user11_man">
+    <skipped/>
+  </testcase>
+  <testcase name="fighting" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user11_man">
+    <skipped/>
+  </testcase>
+  <testcase name="game" time="0.001" classname="com.zhou.autotest.user.M1_fun_tv_home_user11_man">
+    <skipped/>
+  </testcase>
+  <testcase name="sports" time="0.001" classname="com.zhou.autotest.user.M1_fun_tv_home_user11_man">
+    <skipped/>
+  </testcase>
+  <testcase name="testClickSkip" time="6.477" classname="com.zhou.autotest.user.M1_fun_tv_home_user2_Film"/>
+  <testcase name="testFilm" time="20.55" classname="com.zhou.autotest.user.M1_fun_tv_home_user2_Film"/>
+  <testcase name="testCookie" time="36.204" classname="com.zhou.autotest.user.M1_fun_tv_home_user2_Film"/>
+  <testcase name="testLocalStorage" time="3.107" classname="com.zhou.autotest.user.M1_fun_tv_home_user2_Film">
+    <failure type="net.sf.json.JSONException" message="null object">
+      <![CDATA[net.sf.json.JSONException: null object
+	at net.sf.json.JSONObject.verifyIsNull(JSONObject.java:2498)
+	at net.sf.json.JSONObject.get(JSONObject.java:1712)
+	at com.zhou.autotest.M1_fun_tv_home_common.LocalStorage(M1_fun_tv_home_common.java:268)
+	at com.zhou.autotest.user.M1_fun_tv_home_user2_Film.testLocalStorage(M1_fun_tv_home_user2_Film.java:114)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testClickSkip" time="3.426" classname="com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries">
+    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.25.0&amp;apos;, revision: &amp;apos;17482&amp;apos;, time: &amp;apos;2012-07-18 21:08:56&amp;apos;
+System info: os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.8.0_66&amp;apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320">
+      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:353)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:260)
+	at com.zhou.autotest.M1_fun_tv_home_common.ClickSkip(M1_fun_tv_home_common.java:63)
+	at com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries.testClickSkip(M1_fun_tv_home_user3_TVSeries.java:60)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testTVSeries" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries">
+    <skipped/>
+  </testcase>
+  <testcase name="testCookie" time="0.001" classname="com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries">
+    <skipped/>
+  </testcase>
+  <testcase name="testLocalStorage" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries">
+    <skipped/>
+  </testcase>
+  <testcase name="testEpisodes" time="0.001" classname="com.zhou.autotest.user.M1_fun_tv_home_user3_TVSeries">
+    <skipped/>
+  </testcase>
+  <testcase name="testClickSkip" time="6.42" classname="com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment"/>
+  <testcase name="testVplay" time="16.232" classname="com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment"/>
+  <testcase name="testCookie" time="0.046" classname="com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment"/>
+  <testcase name="testLocalStorage" time="3.104" classname="com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment"/>
+  <testcase name="testNextAndLocalStorage" time="62.011" classname="com.zhou.autotest.user.M1_fun_tv_home_user4_Recomment"/>
+  <testcase name="testClickSkip" time="6.711" classname="com.zhou.autotest.user.M1_fun_tv_home_user5_Search"/>
+  <testcase name="testSearch" time="12.303" classname="com.zhou.autotest.user.M1_fun_tv_home_user5_Search"/>
+  <testcase name="testRecentSearchLocalStorage" time="6.154" classname="com.zhou.autotest.user.M1_fun_tv_home_user5_Search"/>
+  <testcase name="testPlayShow" time="3.06" classname="com.zhou.autotest.user.M1_fun_tv_home_user5_Search"/>
+  <testcase name="testTextShow" time="0.026" classname="com.zhou.autotest.user.M1_fun_tv_home_user5_Search"/>
+  <testcase name="testClickSkip" time="6.423" classname="com.zhou.autotest.user.M1_fun_tv_home_user6_VideoLibrary"/>
+  <testcase name="testLocationAndScroll" time="12.116" classname="com.zhou.autotest.user.M1_fun_tv_home_user6_VideoLibrary">
+    <failure type="org.openqa.selenium.WebDriverException" message="unknown error: Cannot read property &amp;apos;click&amp;apos; of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: &amp;apos;2.25.0&amp;apos;, revision: &amp;apos;17482&amp;apos;, time: &amp;apos;2012-07-18 21:08:56&amp;apos;
+System info: os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.8.0_66&amp;apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320">
+      <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Cannot read property 'click' of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.user.M1_fun_tv_home_user6_VideoLibrary.testLocationAndScroll(M1_fun_tv_home_user6_VideoLibrary.java:100)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testClickSkip" time="6.443" classname="com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm"/>
+  <testcase name="testMicroFilm" time="21.652" classname="com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm"/>
+  <testcase name="testCookie" time="0.022" classname="com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm"/>
+  <testcase name="testLocalStorage" time="3.024" classname="com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm"/>
+  <testcase name="PauseAndPlay" time="26.181" classname="com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm"/>
+  <testcase name="briefIntroduction" time="0.245" classname="com.zhou.autotest.user.M1_fun_tv_home_user7_Microfilm"/>
+  <testcase name="testClickSkip" time="6.49" classname="com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot"/>
+  <testcase name="testAnimalComics" time="19.763" classname="com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot"/>
+  <testcase name="testCookie" time="0.031" classname="com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot"/>
+  <testcase name="testLocalStorage" time="3.023" classname="com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot">
+    <failure type="java.lang.AssertionError" message="local storage : assert url ,vtitle expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: local storage : assert url ,vtitle expected:<true> but was:<false>
+	at com.zhou.autotest.M1_fun_tv_home_common.LocalStorage(M1_fun_tv_home_common.java:284)
+	at com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot.testLocalStorage(M1_fun_tv_home_user8_AnimalComicsHotSpot.java:107)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="PauseAndPlay" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot">
+    <skipped/>
+  </testcase>
+  <testcase name="backford" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot">
+    <skipped/>
+  </testcase>
+  <testcase name="hot" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot">
+    <skipped/>
+  </testcase>
+  <testcase name="hotclick" time="0.001" classname="com.zhou.autotest.user.M1_fun_tv_home_user8_AnimalComicsHotSpot">
+    <skipped/>
+  </testcase>
+  <testcase name="testClickSkip" time="6.442" classname="com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny"/>
+  <testcase name="testEntertainment" time="19.23" classname="com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny"/>
+  <testcase name="PauseAndPlay" time="15.012" classname="com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny">
+    <failure type="org.openqa.selenium.WebDriverException" message="unknown error: Cannot read property &amp;apos;pause&amp;apos; of null
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &amp;apos;2.25.0&amp;apos;, revision: &amp;apos;17482&amp;apos;, time: &amp;apos;2012-07-18 21:08:56&amp;apos;
+System info: os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.8.0_66&amp;apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320">
+      <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Cannot read property 'pause' of null
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.M1_fun_tv_home_common.PauseAndFullPlay(M1_fun_tv_home_common.java:131)
+	at com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny.PauseAndPlay(M1_fun_tv_home_user9_EntertainmentNewsFunny.java:98)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="nextAndPlay" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny">
+    <skipped/>
+  </testcase>
+  <testcase name="news" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny">
+    <skipped/>
+  </testcase>
+  <testcase name="funny" time="0.002" classname="com.zhou.autotest.user.M1_fun_tv_home_user9_EntertainmentNewsFunny">
+    <skipped/>
+  </testcase>
+  <testcase name="testClickSkip" time="6.384" classname="com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow"/>
+  <testcase name="testHeaderTab" time="15.282" classname="com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow">
+    <failure type="org.openqa.selenium.WebDriverException" message="unknown error: Cannot read property &amp;apos;click&amp;apos; of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: &amp;apos;2.25.0&amp;apos;, revision: &amp;apos;17482&amp;apos;, time: &amp;apos;2012-07-18 21:08:56&amp;apos;
+System info: os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.8.0_66&amp;apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320">
+      <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Cannot read property 'click' of undefined
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 654ce89fb67caf19bbcdb4f18000a320
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:407)
+	at com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow.testHeaderTab(M1_fun_tv_home_user_VarietyShow.java:83)
+	at com.zhou.run.Run2.main(Run2.java:81)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testPlayAndPause" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow">
+    <skipped/>
+  </testcase>
+  <testcase name="testRecentlyWatched" time="0.0" classname="com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow">
+    <skipped/>
+  </testcase>
+  <testcase name="testClearRecentlyWatched" time="0.001" classname="com.zhou.autotest.user.M1_fun_tv_home_user_VarietyShow">
+    <skipped/>
+  </testcase>
+</testsuite>

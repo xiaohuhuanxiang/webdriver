@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="FX-JSJ800" name="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage" tests="18" failures="0" timestamp="22 Apr 2016 05:37:11 GMT" time="251.875" errors="0">
+  <testcase name="testClickSkip" time="17.252" classname="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage"/>
+  <testcase name="testFUNCookies" time="0.078" classname="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage"/>
+  <testcase name="testClearCookie" time="0.726" classname="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage"/>
+  <testcase name="testFUNLocalstorage" time="0.017" classname="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage"/>
+  <testcase name="testClearLocalstorage" time="0.023" classname="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage"/>
+  <testcase name="testClickSkip" time="3.685" classname="com.zhou.autotest.channel.M1_fun_tv_mplay"/>
+  <testcase name="testPauseAndPlay" time="25.144" classname="com.zhou.autotest.channel.M1_fun_tv_mplay"/>
+  <testcase name="testClickSkip" time="6.759" classname="com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall"/>
+  <testcase name="testFUNCookies" time="0.021" classname="com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall"/>
+  <testcase name="testPauseAndPlay" time="25.041" classname="com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall"/>
+  <testcase name="testBigAndSmall" time="10.081" classname="com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall"/>
+  <testcase name="testClickSkip" time="3.897" classname="com.zhou.autotest.channel.M1_fun_tv_vplay"/>
+  <testcase name="testPauseAndPlay" time="25.046" classname="com.zhou.autotest.channel.M1_fun_tv_vplay"/>
+  <testcase name="testPlayNext" time="11.281" classname="com.zhou.autotest.channel.M1_fun_tv_vplay"/>
+  <testcase name="testClickSkip" time="3.894" classname="com.zhou.autotest.channel.M1_fun_tv_vplay_malliance"/>
+  <testcase name="testFUNCookies" time="0.024" classname="com.zhou.autotest.channel.M1_fun_tv_vplay_malliance"/>
+  <testcase name="testPauseAndFullPlay" time="29.235" classname="com.zhou.autotest.channel.M1_fun_tv_vplay_malliance"/>
+  <testcase name="testPlayNext" time="87.883" classname="com.zhou.autotest.channel.M1_fun_tv_vplay_malliance"/>
+</testsuite>

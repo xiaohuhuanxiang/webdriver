@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [channel]">
+  <test name="channel(failed)" preserve-order="false">
+    <classes>
+      <class name="com.zhou.autotest.channel.M1_fun_tv_mplay">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.channel.M1_fun_tv_vplay">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.channel.M1_fun_tv_vplay_malliance">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.channel.SetupAndTearDown">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall">
+        <methods>
+          <include name="setUp"/>
+          <include name="testClickSkip"/>
+          <include name="testPauseAndPlay"/>
+          <include name="testFUNCookies"/>
+          <include name="testBigAndSmall"/>
+        </methods>
+      </class>
+      <class name="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage">
+        <methods>
+          <include name="testFUNCookies"/>
+          <include name="testClearLocalstorage"/>
+          <include name="tearDown"/>
+          <include name="testClearCookie"/>
+          <include name="setUp"/>
+          <include name="testFUNLocalstorage"/>
+          <include name="testClickSkip"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
