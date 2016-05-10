@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="FX-JSJ800" name="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage" tests="24" failures="2" timestamp="22 Apr 2016 09:16:01 GMT" time="157.218" errors="0">
+  <testcase name="testClickSkip" time="7.918" classname="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage"/>
+  <testcase name="testFUNCookies" time="0.061" classname="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage"/>
+  <testcase name="testClearCookie" time="0.465" classname="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage"/>
+  <testcase name="testFUNLocalstorage" time="0.01" classname="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage"/>
+  <testcase name="testClearLocalstorage" time="0.02" classname="com.zhou.autotest.channel.M1_fun_tv_home_cookiesAndLocalStorage"/>
+  <testcase name="testClickSkip" time="3.662" classname="com.zhou.autotest.channel.M1_fun_tv_mplay"/>
+  <testcase name="testPauseAndPlay" time="25.062" classname="com.zhou.autotest.channel.M1_fun_tv_mplay"/>
+  <testcase name="testClickSkip" time="6.734" classname="com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall"/>
+  <testcase name="testFUNCookies" time="0.024" classname="com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall"/>
+  <testcase name="testPauseAndPlay" time="25.038" classname="com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall"/>
+  <testcase name="testBigAndSmall" time="10.06" classname="com.zhou.autotest.channel.M1_fun_tv_mplay_bigtosmall"/>
+  <testcase name="testClickSkip" time="3.281" classname="com.zhou.autotest.channel.M1_fun_tv_vplay"/>
+  <testcase name="testPauseAndPlay" time="25.045" classname="com.zhou.autotest.channel.M1_fun_tv_vplay"/>
+  <testcase name="testPlayNext" time="9.335" classname="com.zhou.autotest.channel.M1_fun_tv_vplay"/>
+  <testcase name="testClickSkip" time="1.258" classname="com.zhou.autotest.channel.M1_fun_tv_vplay_malliance">
+    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &amp;apos;2.25.0&amp;apos;, revision: &amp;apos;17482&amp;apos;, time: &amp;apos;2012-07-18 21:08:56&amp;apos;
+System info: os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.8.0_66&amp;apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 0150732ab6f45892b02180ca2a75f1fe">
+      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 0150732ab6f45892b02180ca2a75f1fe
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:353)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:260)
+	at com.zhou.autotest.M1_fun_tv_home_common.ClickSkip(M1_fun_tv_home_common.java:63)
+	at com.zhou.autotest.channel.M1_fun_tv_vplay_malliance.testClickSkip(M1_fun_tv_vplay_malliance.java:56)
+	at com.zhou.run.Run.main(Run.java:75)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testFUNCookies" time="0.001" classname="com.zhou.autotest.channel.M1_fun_tv_vplay_malliance">
+    <skipped/>
+  </testcase>
+  <testcase name="testPauseAndFullPlay" time="0.0" classname="com.zhou.autotest.channel.M1_fun_tv_vplay_malliance">
+    <skipped/>
+  </testcase>
+  <testcase name="testPlayNext" time="0.0" classname="com.zhou.autotest.channel.M1_fun_tv_vplay_malliance">
+    <skipped/>
+  </testcase>
+  <testcase name="testOpen" time="4.113" classname="com.zhou.autotest.parter.M1_fun_tv_vplay_parter"/>
+  <testcase name="testPauseAndPlay" time="23.111" classname="com.zhou.autotest.parter.M1_fun_tv_vplay_parter">
+    <failure type="org.openqa.selenium.ElementNotVisibleException" message="element not visible
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 37 milliseconds
+Build info: version: &amp;apos;2.25.0&amp;apos;, revision: &amp;apos;17482&amp;apos;, time: &amp;apos;2012-07-18 21:08:56&amp;apos;
+System info: os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.8.0_66&amp;apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 0150732ab6f45892b02180ca2a75f1fe">
+      <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=48.0.2564.82)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 37 milliseconds
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 0150732ab6f45892b02180ca2a75f1fe
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.zhou.autotest.M1_fun_tv_home_common.PauseAndFullPlay(M1_fun_tv_home_common.java:145)
+	at com.zhou.autotest.parter.M1_fun_tv_vplay_parter.testPauseAndPlay(M1_fun_tv_vplay_parter.java:47)
+	at com.zhou.run.Run.main(Run.java:75)
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testPlayRelate" time="0.001" classname="com.zhou.autotest.parter.M1_fun_tv_vplay_parter">
+    <skipped/>
+  </testcase>
+  <testcase name="testClickNext" time="0.0" classname="com.zhou.autotest.parter.M1_fun_tv_vplay_parter">
+    <skipped/>
+  </testcase>
+  <testcase name="testOpen" time="0.33" classname="com.zhou.autotest.parter.M1_fun_tv_vplay_parterOnePoint"/>
+  <testcase name="testPauseAndPlay" time="10.055" classname="com.zhou.autotest.parter.M1_fun_tv_vplay_parterOnePoint"/>
+</testsuite>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[News Retrieval All :total > 0]]>
+    </line>
+    <line>
+      <![CDATA[News Domestic :total > 0]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="359" started-at="2016-05-10T05:27:54Z" finished-at="2016-05-10T05:27:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="359" started-at="2016-05-10T05:27:54Z" finished-at="2016-05-10T05:27:54Z">
+      <class name="com.zhou.posidonautotest.vplay.NewsRetrieval">
+        <test-method status="PASS" signature="testNewsAll()[pri:0, instance:com.zhou.posidonautotest.vplay.NewsRetrieval@1f554b06]" name="testNewsAll" duration-ms="297" started-at="2016-05-10T13:27:54Z" finished-at="2016-05-10T13:27:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[News Retrieval All :total > 0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testNewsAll -->
+        <test-method status="PASS" signature="testNewsDomestic()[pri:0, instance:com.zhou.posidonautotest.vplay.NewsRetrieval@1f554b06]" name="testNewsDomestic" duration-ms="29" started-at="2016-05-10T13:27:54Z" finished-at="2016-05-10T13:27:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[News Domestic :total > 0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testNewsDomestic -->
+        <test-method status="PASS" signature="testNewsFilters()[pri:0, instance:com.zhou.posidonautotest.vplay.NewsRetrieval@1f554b06]" name="testNewsFilters" duration-ms="23" started-at="2016-05-10T13:27:54Z" finished-at="2016-05-10T13:27:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNewsFilters -->
+      </class> <!-- com.zhou.posidonautotest.vplay.NewsRetrieval -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

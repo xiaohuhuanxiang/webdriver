@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="FX-JSJ800" name="com.zhou.posidonautotest.navigation.MplayNavigation" tests="26" failures="0" timestamp="11 Mar 2016 10:13:53 GMT" time="3.486" errors="0">
+  <testcase name="testMediaSearch" time="0.09" classname="com.zhou.posidonautotest.navigation.Search"/>
+  <testcase name="testVideoSearch" time="0.111" classname="com.zhou.posidonautotest.navigation.Search"/>
+  <testcase name="testAnimalComicsNavigation" time="0.153" classname="com.zhou.posidonautotest.navigation.MplayNavigation"/>
+  <testcase name="testFilmNavigation" time="0.162" classname="com.zhou.posidonautotest.navigation.MplayNavigation"/>
+  <testcase name="testMicrofilmNavigation" time="0.117" classname="com.zhou.posidonautotest.navigation.MplayNavigation"/>
+  <testcase name="testRecommentNavigation" time="0.173" classname="com.zhou.posidonautotest.navigation.MplayNavigation"/>
+  <testcase name="testTVSeriesNavigation" time="0.126" classname="com.zhou.posidonautotest.navigation.MplayNavigation"/>
+  <testcase name="testVarietyShowNavigation" time="0.136" classname="com.zhou.posidonautotest.navigation.MplayNavigation"/>
+  <testcase name="testVideoLibraryNavigation" time="0.133" classname="com.zhou.posidonautotest.navigation.MplayNavigation"/>
+  <testcase name="testCarNavigation" time="0.147" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testEPLNavigation" time="0.132" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testEntertainmentNavigation" time="0.135" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testFashionNavigation" time="0.138" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testFunnyNavigation" time="0.133" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testGuessYouLikeNavigation" time="0.027" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testHotspotNavigation" time="0.213" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testLifeNavigation" time="0.135" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testNewsNavigation" time="0.121" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testScienceNavigation" time="0.127" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testSquaredanceNavigation" time="0.145" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testTourismNavigation" time="0.131" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testVideoNumberNavigation" time="0.147" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testfightingNavigation" time="0.121" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testgameNavigation" time="0.142" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testmilitaryNavigation" time="0.134" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+  <testcase name="testsportsNavigation" time="0.15" classname="com.zhou.posidonautotest.navigation.VplayNavigation"/>
+</testsuite>
